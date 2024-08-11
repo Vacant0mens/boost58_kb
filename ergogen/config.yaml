@@ -1,0 +1,565 @@
+meta:
+  engine: 4.1.0
+  name: corney-island
+  version: 0.1
+  ref: &kb_ref ""
+  author: Vacant0mens
+  footprint: &switch_footprint "ceoloide/switch_choc_v1_v2"
+  switch:
+    $extends: presets.choc
+presets:
+  choc:
+    # Key and keycap measures
+    kx: cx # spacing between key centers (X-axis)
+    ky: cy # spacing between key centers (Y-axis)
+    key_spread: 20 # horizontal space between columns (default: 19)
+    key_padding: 19 # vertical padding between keys (deafult: 19)
+    keycap_w: 17.5 # keycap width (cherry: 18, choc: 17.5)
+    keycap_h: 16.5 # keycap height (cherry: 18, choc: 16.5)
+    key_cutout_w: 13.8 # key cutout hole width (cherry, choc v2: 14, choc v1: 13.8)
+    key_cutout_h: 13.8 # key cutout hole height (cherry, choc v2: 14, choc v1: 13.8)
+    led_pos_x: 0 # Led X position relative to the switch center
+    led_pos_y: 5 # Led Y position relative to the switch center
+    led_rotation: 0 # Led rotation
+    diode_pos_x: 0 # diode Y position relative to switch center
+    diode_pos_y: -8.5 # diode Y position relative to switch center
+    diode_rotation: 0 # Diode rotation
+    switch_rotation: 180 # Hotswap south, led north
+    screw_hole_radius: 1.6 # M3 hole; 1.6 x 2 = diameter: 3.2
+units:
+  $extends: meta.switch
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [40, -120]
+      key:
+        tags:
+        - key
+        spread: key_spread
+        padding: key_padding
+        bind: [4, 2, 2, 2]
+      #   origin: [0, -17]
+      rows:
+        bottom:
+          row_net: P5
+          led_row: 1
+          led_row_next: 1
+        home:
+          row_net: P4
+          led_row: 2
+          led_row_next: 2
+        top:
+          row_net: P3
+          led_row: 3
+          led_row_next: 3
+        num:
+          row_net: P2
+          led_row: 4
+          led_row_next: 4
+      columns:
+        outer:
+          key:
+            bind: [2, 2, 4, 4]
+            led_col: '0'
+            led_col_next: 1
+            column_net: P21
+        pinky:
+          key:
+            led_col: 1
+            led_col_next: 2
+            column_net: P20
+            stagger: 10
+        ring:
+          key:
+            led_col: 2
+            led_col_next: 3
+            column_net: P19
+            stagger: 12
+        middle:
+          key:
+            led_col: 3
+            led_col_next: 4
+            column_net: P18
+            stagger: 4
+        index:
+          key:
+            led_col: 4
+            led_col_next: 5
+            stagger: -4
+            column_net: P15
+        inner:
+          key:
+            led_col: 5
+            led_col_next: '0'
+            stagger: -6
+            column_net: P14
+          rows:
+            bottom:
+              bind: [2, 10, 8, 2]
+              led_row_next: '2'
+            home:
+              bind: [2, 26, 20, 2]
+              led_row_next: '3'
+            top:
+              bind: [4, 26, 2, 2]
+              led_row_next: '4'
+            num:
+              bind: [4, 26, 2, 2]
+              led_row_next: ''
+              led_col_next: ''
+    thumb:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-60, -16]
+      key:
+        tags:
+        - key
+        led_row: '0'
+        led_row_next: '0'
+        spread: key_spread
+        row_net: P6
+      rows:
+        only:
+          padding: key_padding
+      columns:
+        first:
+          key:
+            column_net: P19
+            led_col: 1
+            led_col_next: 2
+          rows:
+            only:
+              bind: [6, 2, 4, 22]
+        second:
+          key:
+            column_net: P18
+            led_col: 2
+            led_col_next: 3
+          rows:
+            only:
+              bind: [8, 4, 4, 2]
+        third:
+          key:
+            led_col: 3
+            led_col_next: 4
+            stagger: -1
+            splay: -5
+            column_net: P15
+          rows:
+            only:
+              bind: [8, 4, 4, 4]
+        home:
+          key:
+            led_col: 4
+            led_col_next: 5
+            spread: 19
+            splay: -15
+            origin: [-9, -9.5]
+            column_net: P14
+          rows:
+            only:
+              bind: [4, 4, 4, 4]
+        inner:
+          key:
+            led_col: 5
+            led_col_next: '0'
+            spread: 18
+            splay: -20
+            origin: [-9, -9.5]
+            column_net: P16
+          rows:
+            only:
+              bind: [4, 4, 4, 8]
+              led_row_next: 1
+
+    screw_outer_bottom:
+      key:
+        tags:
+        - screw
+      anchor:
+        ref: matrix_outer_bottom
+        shift: [10, 0]
+    screw_outer_top:
+      $extends: points.zones.screw_outer_bottom
+      anchor:
+        ref: matrix_outer_num
+        shift: [10, 0]
+    screw_middle_bottom:
+      $extends: points.zones.screw_outer_bottom
+      anchor:
+        ref: thumb_first_only
+        shift: [10, 11]
+    screw_middle_top:
+      $extends: points.zones.screw_outer_bottom
+      anchor:
+        ref: matrix_ring_top
+        shift: [10, 10]
+    screw_inner_bottom:
+      $extends: points.zones.screw_outer_bottom
+      anchor:
+        ref: thumb_home_only
+        shift: [2, 11]
+    screw_inner_top:
+      $extends: points.zones.screw_outer_bottom
+      anchor:
+        ref: matrix_inner_top
+        shift: [10, 10]
+outlines:
+  keycap_outline:
+  - what: rectangle
+    where: [key]
+    size: [keycap_w, keycap_h]
+    fillet: 1
+  panel:
+  - what: rectangle
+    where: [key]
+    bound: true
+    size: [key_spread - 4, key_padding - 3]
+    fillet: 1
+
+  _screws:
+  - what: circle
+    where: [screw]
+    radius: screw_hole_radius
+  _switch_cutouts:
+  - what: rectangle
+    where: [key]
+    size: [key_cutout_w, key_cutout_h]
+  _switch_spacer_cutouts:
+  - what: rectangle
+    where: [key]
+    size: [key_cutout_w + 0.7, key_cutout_h + 0.7]
+  _rotary_mcu_cutout:
+  - what: rectangle
+    where:
+      ref: matrix_inner_top
+      shift: [23.5, -12]
+    size: [21, 86]
+
+  top_plate:
+  - what: outline
+    name: panel
+    # adjust:
+    #   ref: matrix_inner_bottom
+    #   shift: [220, -70]
+    #   rotate: 180
+    fillet: 1
+  - what: outline
+    name: _switch_cutouts
+    # adjust:
+    #   ref: matrix_inner_bottom
+    #   shift: [220, -70]
+    #   rotate: 180
+    operation: subtract
+  - what: outline
+    name: _screws
+    # adjust:
+    #   ref: matrix_inner_bottom
+    #   shift: [220, -70]
+    #   rotate: 180
+    operation: subtract
+  - what: outline
+    name: _rotary_mcu_cutout
+    # adjust:
+    #   ref: matrix_inner_bottom
+    #   shift: [220, -70]
+    #   rotate: 180
+    operation: subtract
+  bottom_plate:
+  - what: outline
+    name: panel
+    adjust:
+      # ref: matrix_inner_bottom
+      shift: [150, 0]
+  - what: outline
+    # rotate: 180
+    name: _screws
+    adjust:
+      #   ref: matrix_inner_bottom
+      #   shift: [65, -190]
+      #   rotate: 180
+      shift: [150, 0]
+    operation: subtract
+  spacer_plate:
+  - what: outline
+    name: top_plate
+  - what: outline
+    name: _screws
+    operation: subtract
+  - what: outline
+    name: _switch_spacer_cutouts
+    operation: subtract
+
+pcbs:
+  spacer_plate:
+    # pcb thickness: 0.4mm
+    template: kicad8
+    outlines:
+      main:
+        outline: spacer_plate
+  top_bottom_plate:
+    # pcb thickness: 1.6mm
+    template: kicad8
+    outlines:
+      top_plate:
+        outline: top_plate
+      bottom_plate:
+        outline: bottom_plate
+  staggered_col58:
+    # pcb thickness: 1.6mm
+    outlines:
+      main:
+        outline: panel
+      top_plate_cutout_draw_front:
+        outline: _rotary_mcu_cutout
+        layer: F.SilkS
+      top_plate_cutout_draw_back:
+        outline: _rotary_mcu_cutout
+        layer: B.SilkS
+    references: true
+    template: kicad8
+    footprints:
+      mmount_screws:
+        what: mounting_hole_npth
+        where: [screw]
+        params:
+          designator: M3_
+          hole_size: screw_hole_radius * 2
+          hole_drill: screw_hole_radius * 2
+      promicro:
+        what: promicro
+        where:
+          ref: matrix_inner_num
+          shift: [22, -6]
+          rotate: -90
+        params:
+          orientation: down
+      # promicro_reverse:
+      #   what: promicro
+      #   where:
+      #     ref: matrix_inner_num
+      #     shift: [23, -8]
+      #     rotate: -90
+      #   params:
+      #     orientation: up
+      choc_hotswap:
+        what: switch_choc_v1_v2
+        where: [key]
+        params:
+          designator: SW
+          # Row-To-Column diode orientation
+          from: "{{row_net}}"
+          to: "D{{column_net}}"
+          include_keycap: true
+          include_corner_marks: true
+          include_stabilizer_nets: true
+          LEFTSTAB: "P10{{led_row_next}}{{led_col_next}}"
+          RIGHTSTAB: "P10{{led_row}}{{led_col}}"
+          reversible: true
+          hotswap: true
+        adjust:
+          rotate: switch_rotation
+      key_diodes:
+        what: diode_tht_sod123
+        where: [key]
+        adjust:
+          shift: [0, -8.5]
+          rotate: diode_rotation
+        params:
+          reversible: true
+          include_tht: true
+          # Row-To-Column diode orientation
+          from: "D{{column_net}}"
+          to: "{{column_net}}"
+      per_key_leds:
+        what: led_sk6812mini-e
+        where: [key]
+        adjust:
+          shift: [0, 5]
+        params:
+          designator: "L"
+          P2: "P10{{led_row_next}}{{led_col_next}}"
+          P4: "P10{{led_row}}{{led_col}}"
+          reversible: true
+          include_keepout: true
+          include_courtyard: false
+          choc_v2_stab_pth_as_via: true
+          via_size: 0.56
+          via_drill: 0.3
+      trrs:
+        what: trrs
+        where:
+          ref: matrix_inner_home
+          shift: [34, 8]
+          rotate: -90
+        params:
+          A: VCC
+          B: P0
+          C: P1
+          D: GND
+          reverse: true
+          symmetric: false
+      reset:
+        what: reset_switch_smd_side
+        params:
+          reversible: true
+        where:
+          ref: matrix_inner_bottom
+          shift: [32.1, 8]
+          rotate: -90
+      power_switch:
+        what: power_switch_smd_side
+        params:
+          reversible: true
+        where:
+          ref: matrix_inner_bottom
+          shift: [32.4, -2]
+          # rotate: 90
+      encoder_top:
+        what: rotary
+        where:
+          ref: matrix_inner_home
+          shift: [23, -8]
+          rotate: -90
+        params:
+          designator: Rotary
+          from: P16
+          to: P4
+          A: P7
+          B: P8
+          C: GND
+      underglow_b0:
+        what: led_WS2812B
+        where:
+          ref: thumb_first_only
+          shift: [-10, 28]
+          rotate: -90
+        params:
+          side: B
+          designator: UB_
+          din: P1001
+          dout: P10u01
+      underglow_f0:
+        what: led_WS2812B
+        where:
+          ref: thumb_first_only
+          shift: [-10, 35]
+          rotate: -90
+        params:
+          side: F
+          designator: UA_
+          din: P1001
+          dout: P10u01
+      underglow_b1:
+        what: led_WS2812B
+        where:
+          ref: thumb_first_only
+          shift: [-10, 66]
+          rotate: -90
+        params:
+          side: B
+          designator: UB_
+          din: P10u01
+          dout: P10u02
+      underglow_f1:
+        what: led_WS2812B
+        where:
+          ref: thumb_first_only
+          shift: [-10, 73]
+          rotate: -90
+        params:
+          side: F
+          designator: UA_
+          din: P10u01
+          dout: P10u02
+
+      underglow_b2:
+        what: led_WS2812B
+        where:
+          ref: thumb_second_only
+          shift: [10, 26]
+          rotate: -90
+        params:
+          side: B
+          designator: UB_
+          din: P10u02
+          dout: P10u03
+      underglow_f2:
+        what: led_WS2812B
+        where:
+          ref: thumb_second_only
+          shift: [10, 33]
+          rotate: -90
+        params:
+          side: F
+          designator: UA_
+          din: P10u02
+          dout: P10u03
+      underglow_b3:
+        what: led_WS2812B
+        where:
+          ref: thumb_second_only
+          shift: [10, 64]
+          rotate: -90
+        params:
+          side: B
+          designator: UB_
+          din: P10u03
+          dout: P10u04
+      underglow_f3:
+        what: led_WS2812B
+        where:
+          ref: thumb_second_only
+          shift: [10, 71]
+          rotate: -90
+        params:
+          side: F
+          designator: UA_
+          din: P10u03
+          dout: P10u04
+
+      underglow_b4:
+        what: led_WS2812B
+        where:
+          ref: matrix_inner_bottom
+          shift: [13, -12]
+          rotate: -90
+        params:
+          side: B
+          designator: UB_
+          din: P10u04
+          dout: P10u05
+      underglow_f4:
+        what: led_WS2812B
+        where:
+          ref: matrix_inner_bottom
+          shift: [13, -5]
+          rotate: -90
+        params:
+          side: F
+          designator: UA_
+          din: P10u04
+          dout: P10u05
+      underglow_b5:
+        what: led_WS2812B
+        where:
+          ref: matrix_inner_bottom
+          shift: [13, 18]
+          rotate: -90
+        params:
+          side: B
+          designator: UB_
+          din: P10u05
+          dout: P10u06
+      underglow_f5:
+        what: led_WS2812B
+        where:
+          ref: matrix_inner_bottom
+          shift: [13, 25]
+          rotate: -90
+        params:
+          side: F
+          designator: UA_
+          din: P10u05
+          dout: P10u06
