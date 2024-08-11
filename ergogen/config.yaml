@@ -306,7 +306,7 @@ pcbs:
         outline: top_plate
       bottom_plate:
         outline: bottom_plate
-  staggered_col58:
+  boost58:
     # pcb thickness: 1.6mm
     outlines:
       main:
