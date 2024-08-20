@@ -206,12 +206,12 @@ points:
         ref: matrix_inner_top
         shift: [10, 10]
 outlines:
-  keycap_outline:
+  _keycap_outline:
   - what: rectangle
     where: [key]
     size: [keycap_w, keycap_h]
     fillet: 1
-  panel:
+  _panel:
   - what: rectangle
     where: [key]
     bound: true
@@ -239,57 +239,22 @@ outlines:
 
   top_plate:
   - what: outline
-    name: panel
-    # adjust:
-    #   ref: matrix_inner_bottom
-    #   shift: [220, -70]
-    #   rotate: 180
+    name: _panel
     fillet: 1
-  - what: outline
-    name: _switch_cutouts
-    # adjust:
-    #   ref: matrix_inner_bottom
-    #   shift: [220, -70]
-    #   rotate: 180
-    operation: subtract
-  - what: outline
-    name: _screws
-    # adjust:
-    #   ref: matrix_inner_bottom
-    #   shift: [220, -70]
-    #   rotate: 180
-    operation: subtract
-  - what: outline
-    name: _rotary_mcu_cutout
-    # adjust:
-    #   ref: matrix_inner_bottom
-    #   shift: [220, -70]
-    #   rotate: 180
-    operation: subtract
+  - -_switch_cutouts
+  - -_screws
+  - -_rotary_mcu_cutout
   bottom_plate:
   - what: outline
-    name: panel
-    adjust:
-      # ref: matrix_inner_bottom
-      shift: [150, 0]
+    name: _panel
   - what: outline
-    # rotate: 180
     name: _screws
-    adjust:
-      #   ref: matrix_inner_bottom
-      #   shift: [65, -190]
-      #   rotate: 180
-      shift: [150, 0]
     operation: subtract
   spacer_plate:
   - what: outline
     name: top_plate
-  - what: outline
-    name: _screws
-    operation: subtract
-  - what: outline
-    name: _switch_spacer_cutouts
-    operation: subtract
+  - -_screws
+  - -_switch_spacer_cutouts
 
 pcbs:
   spacer_plate:
@@ -310,7 +275,7 @@ pcbs:
     # pcb thickness: 1.6mm
     outlines:
       main:
-        outline: panel
+        outline: _panel
       top_plate_cutout_draw_front:
         outline: _rotary_mcu_cutout
         layer: F.SilkS
