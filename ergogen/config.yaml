@@ -101,7 +101,7 @@ points:
               bind: [2, 10, 8, 2]
               led_row_next: '2'
             home:
-              bind: [2, 26, 10, 2]
+              bind: [2, 26, 20, 2]
               led_row_next: '3'
             top:
               bind: [4, 26, 2, 2]
@@ -389,8 +389,8 @@ pcbs:
         params:
           reversible: true
         where:
-          ref: matrix_inner_bottom
-          shift: [32.4, -2]
+          ref: matrix_inner_home
+          shift: [32.4, -0.5]
           # rotate: 90
       encoder_top:
         what: rotary
