@@ -257,20 +257,6 @@ outlines:
   - -_switch_spacer_cutouts
 
 pcbs:
-  spacer_plate:
-    # pcb thickness: 0.4mm
-    template: kicad8
-    outlines:
-      main:
-        outline: spacer_plate
-  top_bottom_plate:
-    # pcb thickness: 1.6mm
-    template: kicad8
-    outlines:
-      top_plate:
-        outline: top_plate
-      bottom_plate:
-        outline: bottom_plate
   boost58:
     # pcb thickness: 1.6mm
     outlines:
