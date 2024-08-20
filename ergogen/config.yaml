@@ -244,7 +244,7 @@ outlines:
   _switch_spacer_cutouts:
   - what: rectangle
     where: [key]
-    size: [key_cutout_w + 0.7, key_cutout_h + 0.7]
+    size: [key_cutout_w + 0.8, key_cutout_h + 0.8]
   _rotary_mcu_cutout:
   - what: rectangle
     where:
