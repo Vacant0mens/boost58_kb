@@ -217,7 +217,14 @@ outlines:
     bound: true
     size: [key_spread - 4, key_padding - 3]
     fillet: 1
-
+  _panel_wall_line:
+  - what: outline
+    name: _panel
+    expand: 2
+  panel_wall:
+  - what: outline
+    name: _panel_wall_line
+  - -_panel
   _screws:
   - what: circle
     where: [screw]
