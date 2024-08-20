@@ -26,6 +26,8 @@ presets:
     diode_rotation: 0 # Diode rotation
     switch_rotation: 180 # Hotswap south, led north
     screw_hole_radius: 1.6 # M3 hole; 1.6 x 2 = diameter: 3.2
+    heat_insert_hole_radius: 2.4 # 2.4mm x 2 = 4.8mm (threaded inserts are 5mm)
+    screw_material_radius: 3.2 # 3.2 x 2 = 6.4 diameter -- three wall lines of 0.4mm
 units:
   $extends: meta.switch
 points:
@@ -233,10 +235,14 @@ outlines:
   - what: circle
     where: [screw]
     radius: screw_material_radius
+  _heat_insert_hole:
+  - what: circle
+    where: [screw]
+    radius: heat_insert_hole_radius
   screw_posts:
   - what: outline
     name: _screw_material
-  - -_screws
+  - -_heat_insert_hole
   _switch_cutouts:
   - what: rectangle
     where: [key]
@@ -262,9 +268,7 @@ outlines:
   bottom_plate:
   - what: outline
     name: _panel
-  - what: outline
-    name: _screws
-    operation: subtract
+  - -_heat_insert_hole
   spacer_plate:
   - what: outline
     name: top_plate
