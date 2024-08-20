@@ -229,6 +229,14 @@ outlines:
   - what: circle
     where: [screw]
     radius: screw_hole_radius
+  _screw_material:
+  - what: circle
+    where: [screw]
+    radius: screw_material_radius
+  screw_posts:
+  - what: outline
+    name: _screw_material
+  - -_screws
   _switch_cutouts:
   - what: rectangle
     where: [key]
