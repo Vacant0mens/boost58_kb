@@ -255,8 +255,8 @@ outlines:
   - what: rectangle
     where:
       ref: matrix_inner_top
-      shift: [23.5, -12]
-    size: [21, 86]
+      shift: [23.5, -3]
+    size: [21, 68]
 
   top_plate:
   - what: outline
