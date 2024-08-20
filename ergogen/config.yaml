@@ -99,7 +99,7 @@ points:
               bind: [2, 10, 8, 2]
               led_row_next: '2'
             home:
-              bind: [2, 26, 20, 2]
+              bind: [2, 26, 10, 2]
               led_row_next: '3'
             top:
               bind: [4, 26, 2, 2]
