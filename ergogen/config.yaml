@@ -374,7 +374,7 @@ pcbs:
         what: diode_tht_sod123
         where: [key]
         adjust:
-          shift: [0, -8.5]
+          shift: [0, -9]
           rotate: diode_rotation
         params:
           reversible: true
