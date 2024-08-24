@@ -5044,7 +5044,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5077,7 +5077,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 24 "P1011"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 24 "P1011"))
@@ -5157,7 +5157,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5190,7 +5190,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 26 "P1021"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 26 "P1021"))
@@ -5270,7 +5270,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5303,7 +5303,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 28 "P1031"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 28 "P1031"))
@@ -5383,7 +5383,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5416,7 +5416,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 30 "P1041"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 30 "P1041"))
@@ -5496,7 +5496,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5529,7 +5529,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 33 "P1012"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 33 "P1012"))
@@ -5609,7 +5609,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5642,7 +5642,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 34 "P1022"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 34 "P1022"))
@@ -5722,7 +5722,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5755,7 +5755,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 35 "P1032"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 35 "P1032"))
@@ -5835,7 +5835,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5868,7 +5868,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 36 "P1042"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 36 "P1042"))
@@ -5948,7 +5948,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -5981,7 +5981,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 38 "P1013"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 38 "P1013"))
@@ -6061,7 +6061,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6094,7 +6094,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 39 "P1023"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 39 "P1023"))
@@ -6174,7 +6174,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6207,7 +6207,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 40 "P1033"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 40 "P1033"))
@@ -6287,7 +6287,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6320,7 +6320,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 41 "P1043"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 41 "P1043"))
@@ -6400,7 +6400,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6433,7 +6433,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 43 "P1014"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 43 "P1014"))
@@ -6513,7 +6513,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6546,7 +6546,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 44 "P1024"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 44 "P1024"))
@@ -6626,7 +6626,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6659,7 +6659,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 45 "P1034"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 45 "P1034"))
@@ -6739,7 +6739,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6772,7 +6772,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 46 "P1044"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 46 "P1044"))
@@ -6852,7 +6852,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6885,7 +6885,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 48 "P1015"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 48 "P1015"))
@@ -6965,7 +6965,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -6998,7 +6998,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 49 "P1025"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 49 "P1025"))
@@ -7078,7 +7078,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7111,7 +7111,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 50 "P1035"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 50 "P1035"))
@@ -7191,7 +7191,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7224,7 +7224,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 51 "P1045"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 51 "P1045"))
@@ -7304,7 +7304,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7337,7 +7337,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 27 "P1020"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 27 "P1020"))
@@ -7417,7 +7417,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7450,7 +7450,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 29 "P1030"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 29 "P1030"))
@@ -7530,7 +7530,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7563,7 +7563,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 31 "P1040"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 31 "P1040"))
@@ -7643,7 +7643,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7676,7 +7676,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 12 "P10"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 12 "P10"))
@@ -7756,7 +7756,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7789,7 +7789,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 53 "P1002"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 53 "P1002"))
@@ -7869,7 +7869,7 @@
       (at -4 -2.5 0)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -7902,7 +7902,7 @@
     (pad "1" smd rect (at 2.7 -0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 55 "P1003"))
     
-    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 0) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 0) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 55 "P1003"))
@@ -7982,7 +7982,7 @@
       (at -4 -2.5 -5)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -8015,7 +8015,7 @@
     (pad "1" smd rect (at 2.7 -0.7 -5) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 -5) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 56 "P1004"))
     
-    (fp_text value "%R" (at -4 2.5 -5) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 -5) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 -5) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 56 "P1004"))
@@ -8095,7 +8095,7 @@
       (at -4 -2.5 -20)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -8128,7 +8128,7 @@
     (pad "1" smd rect (at 2.7 -0.7 -20) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 -20) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 57 "P1005"))
     
-    (fp_text value "%R" (at -4 2.5 -20) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 -20) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 -20) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 57 "P1005"))
@@ -8208,7 +8208,7 @@
       (at -4 -2.5 -40)
       (layer "B.SilkS")
       
-      (effects (font (size 1 1) (thickness 0.15)))
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (attr smd)
 
@@ -8241,7 +8241,7 @@
     (pad "1" smd rect (at 2.7 -0.7 -40) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 4 "VCC"))
     (pad "2" smd rect (at 2.7 0.7 -40) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (net 25 "P1010"))
     
-    (fp_text value "%R" (at -4 2.5 -40) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at -4 2.5 -40) (layer F.SilkS) (effects (font (size 1 1) (thickness 0.15))))
     (fp_line (start -3.8 -1.6) (end -2.2 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (fp_line (start -3.8 0) (end -3.8 -1.6) (layer "B.SilkS") (stroke (width 0.12) (type solid)))
     (pad "2" smd rect (at 2.70 -0.7 -40) (size 1.4 1) (layers "B.Cu" "B.Paste" "B.Mask") (net 25 "P1010"))
@@ -9206,8 +9206,9 @@
 (gr_line (start 161.0813302305074 155.98019963846914) (end 179.0793832587874 134.53095526736047) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 160.5428849568309 118.45482336236914) (end 179.0300805381797 133.96742246041447) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 160.4 118.14840559859232) (end 160.4 105.80000000000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 160.8 105.4) (end 173 105.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 176.4 70.1) (end 176.4 33) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 160.8 105.4) (end 176 105.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 176.4 105) (end 176.4 100.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 176.4 68.6) (end 176.4 33) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 132.8 32.6) (end 156.6 32.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 167.4 32.6) (end 176 32.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 132.4 32.2) (end 132.4 27) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -9229,8 +9230,9 @@
 (gr_line (start 160.5777015 153.4689533) (end 176.26171915778346 134.77746886901556) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 158.54288495683087 119.38743875823094) (end 176.21241643717573 134.2139360620696) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 158.4 119.08102099445415) (end 158.4 103.80000000000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 158.8 103.4) (end 173 103.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 174.4 70.1) (end 174.4 35) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 158.8 103.4) (end 174 103.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 174.4 103) (end 174.4 100.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 174.4 68.6) (end 174.4 35) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 130.8 34.6) (end 156.6 34.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 167.4 34.6) (end 174 34.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 130.4 34.2) (end 130.4 29) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -9244,8 +9246,8 @@
 (gr_line (start 49.6 52.2) (end 49.6 41) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 28 52.6) (end 49.2 52.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 27.6 132) (end 27.6 53) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 176 70.5) (end 174.8 70.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 173.4 103.80000000000001) (end 173.4 105) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 174.8 100) (end 176 100) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 176 69) (end 174.8 69) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 167 34.2) (end 167 33) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 157 33) (end 157 34.2) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 107.95862710291567 134.40152210000002) (mid 107.94121260291567 134.4003807) (end 107.92376480291567 134.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -9255,8 +9257,10 @@
 (gr_arc (start 179.0793832950106 134.5309553241913) (mid 179.17144339501058 134.23897792419132) (end 179.0300805950106 133.9674224241913) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 160.4 118.14840559859232) (mid 160.4374769 118.31745289859232) (end 160.54288490000002 118.45482339859232) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 160.8 105.4) (mid 160.5171573 105.51715730000001) (end 160.4 105.80000000000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 173 105.4) (mid 173.2828427 105.2828427) (end 173.4 105) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 173.4 103.80000000000001) (mid 173.2828427 103.51715730000001) (end 173 103.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 176 105.4) (mid 176.2828427 105.2828427) (end 176.4 105) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 176.4 100.4) (mid 176.2828427 100.1171573) (end 176 100) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 174.8 100) (mid 174.5171573 100.1171573) (end 174.4 100.4) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 174 103.4) (mid 174.2828427 103.2828427) (end 174.4 103) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 158.8 103.4) (mid 158.5171573 103.51715730000001) (end 158.4 103.80000000000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 158.4 119.08102099445415) (mid 158.4374769 119.25006829445415) (end 158.54288490000002 119.38743879445416) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 176.26171919400662 134.77746892584642) (mid 176.3537792940066 134.48549152584644) (end 176.21241649400662 134.21393602584644) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -9293,8 +9297,8 @@
 (gr_arc (start 167.4 32.6) (mid 167.1171573 32.7171573) (end 167 33) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 167 34.2) (mid 167.1171573 34.482842700000006) (end 167.4 34.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 174.4 35) (mid 174.2828427 34.7171573) (end 174 34.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 174.4 70.1) (mid 174.5171573 70.3828427) (end 174.8 70.5) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 176 70.5) (mid 176.2828427 70.3828427) (end 176.4 70.1) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 174.4 68.6) (mid 174.5171573 68.8828427) (end 174.8 69) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 176 69) (mid 176.2828427 68.8828427) (end 176.4 68.6) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 
 )
 
