@@ -423,8 +423,8 @@ pcbs:
         params:
           reversible: true
         where:
-          ref: matrix_inner_bottom
-          shift: [32.4, -2]
+          ref: matrix_inner_home
+          shift: [32.4, -1]
           # rotate: 90
       encoder_top:
         what: rotary
