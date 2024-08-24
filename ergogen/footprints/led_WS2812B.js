@@ -16,7 +16,7 @@ module.exports = {
             ${p.at /* parametric position */}
 
             ${'' /* footprint reference */}
-            (fp_text reference "${p.ref}" (at 0 0 ${90 + p.r}) (layer F.SilkS) ${p.ref_hide} (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (fp_text reference "${p.ref}" (at 0 0 ${90 + p.r}) (layer ${p.side}.SilkS) ${p.ref_hide} (effects (font (size 1.27 1.27) (thickness 0.15))))
             (fp_text value "" (at 0 0) (layer ${p.side}.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
 
             (fp_line (start -2.5 -2.5) (end -2.5 2.5) (layer ${p.side}.SilkS) (width 0.15))
@@ -45,7 +45,7 @@ module.exports = {
         )
         `
         const reverse_content = `
-            (fp_text value "%R" (at 0 1.2 ${90 + p.r}) (layer B.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+            (fp_text value "%R" (at 0 1.2 ${90 + p.r}) (layer ${reverse_side}.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
             (fp_line (start -2.5 -2.5) (end -2.5 2.5) (layer ${reverse_side}.SilkS) (width 0.15))
             (fp_line (start -2.5 2.5) (end 2.5 2.5) (layer ${reverse_side}.SilkS) (width 0.15))
             (fp_line (start 2.5 2.5) (end 2.5 -2.5) (layer ${reverse_side}.SilkS) (width 0.15))
