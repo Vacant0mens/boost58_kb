@@ -115,11 +115,11 @@
 //    keycap_3dmodel_xyz_rotation: default is [0, 0, 0]
 //      xyz rotation (in degrees), used to adjust the orientation of the 3d
 //      model relative the footprint.
-//    centerhole_net: default is 'GND'
+//    CENTERHOLE: default is 'GND'
 //      net to attach to the center hole
-//    leftstab_net: default is 'D1'
+//    LEFTSTAB: default is 'D1'
 //      net to attach to left stabilizer hole
-//    rightstab_net: default is 'D2'
+//    RIGHTSTAB: default is 'D2'
 //      net to attach to right stabilizer hole
 //
 // Notes:
@@ -157,6 +157,10 @@
 //
 // @mlilley's improvements:
 //  - Add options to include marks for the led cutout in choc v1 and v2 switch bodies
+//
+// @vacant0mens' improvements:
+//  - added descriptions for hole nets
+//  - added ref drawings to back side for when reversible == 'true'.
 
 module.exports = {
   params: {
@@ -206,7 +210,7 @@ module.exports = {
     (layer "${p.side}.Cu")
     ${p.at}
     (property "Reference" "${p.ref}"
-      (at 0 8.2 ${p.r})
+      (at 0 7.5 ${p.r})
       (layer "F.SilkS")
       ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
@@ -495,7 +499,7 @@ module.exports = {
     }
     if (p.side == "B" || p.reversible) {
       final += `
-    (fp_text value "%R" (at 0 8.2 ${p.r}) (layer B.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text value "%R" (at 0 7.5 ${p.r}) (layer B.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
 `
     }
     if (p.include_stabilizer_pad && p.choc_v2_support) {
