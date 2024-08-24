@@ -232,11 +232,20 @@ outlines:
   _wall_outer:
   - what: outline
     name: _panel
-    expand: 2
-  panel_wall:
+    expand: 2.4
+    joints: 1
+  _wall_inner:
   - what: outline
-    name: _panel_wall_line
-  - -_panel
+    name: _panel
+    expand: 0.4
+    joints: 1
+  _panel_wall_full:
+  - what: outline
+    name: _wall_outer
+  - -_wall_inner
+  - -_rst_pwr_trrs_wall_cutout
+  - -_mcu_usb_wall_cutout
+
   _screws:
   - what: circle
     where: [screw]
@@ -249,10 +258,6 @@ outlines:
   - what: circle
     where: [screw]
     radius: heat_insert_hole_radius
-  screw_posts:
-  - what: outline
-    name: _screw_material
-  - -_heat_insert_hole
   _switch_cutouts:
   - what: rectangle
     where: [key]
@@ -265,8 +270,8 @@ outlines:
   - what: rectangle
     where:
       ref: matrix_inner_top
-      shift: [23.5, -8]
-    size: [21, 78]
+      shift: [24, -8]
+    size: [22, 79]
   - what: polygon
     points:
     - ref: matrix_inner_bottom
@@ -274,10 +279,14 @@ outlines:
     - ref: matrix_inner_bottom
       shift: [19, -9]
     - ref: matrix_inner_bottom
-      shift: [19, -16.3]
+      shift: [19, -15.8]
     - ref: thumb_inner_only
-      shift: [-18, 12]
+      shift: [-18.385, 12.5]
 
+  screw_posts:
+  - what: outline
+    name: _screw_material
+  - -_heat_insert_hole
   top_plate:
   - what: outline
     name: _panel
@@ -285,15 +294,20 @@ outlines:
   - -_switch_cutouts
   - -_screws
   - -_rotary_mcu_cutout
-  bottom_plate:
-  - what: outline
-    name: _panel
-  - -_heat_insert_hole
   spacer_plate:
   - what: outline
     name: top_plate
   - -_screws
   - -_switch_spacer_cutouts
+  panel_wall:
+  - what: outline
+    name: _panel_wall_full
+    fillet: 1
+  bottom_plate:
+  - what: outline
+    name: _wall_inner
+    fillet: 1
+  - -_screw_material
 
 pcbs:
   boost58:
