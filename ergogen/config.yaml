@@ -279,9 +279,9 @@ outlines:
     - ref: matrix_inner_bottom
       shift: [19, -9]
     - ref: matrix_inner_bottom
-      shift: [19, -15.8]
+      shift: [19, -16.3]
     - ref: thumb_inner_only
-      shift: [-18.385, 12.5]
+      shift: [-17.966, 12]
 
   screw_posts:
   - what: outline
