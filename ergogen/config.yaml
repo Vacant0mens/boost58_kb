@@ -221,8 +221,8 @@ outlines:
   - what: rectangle
     where:
       ref: matrix_inner_home
-      shift: [35.4, -5.5]
-    size: [4, 40]
+      shift: [35.4, 0.5]
+    size: [4, 31]
   _mcu_usb_wall_cutout:
   - what: rectangle
     where:
