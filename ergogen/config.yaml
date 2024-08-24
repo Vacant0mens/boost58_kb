@@ -245,6 +245,10 @@ outlines:
   - -_wall_inner
   - -_rst_pwr_trrs_wall_cutout
   - -_mcu_usb_wall_cutout
+  _panel_filleted:
+  - what: outline
+    name: _panel
+    fillet: 0.4
 
   _screws:
   - what: circle
@@ -314,7 +318,7 @@ pcbs:
     # pcb thickness: 1.6mm
     outlines:
       main:
-        outline: _panel
+        outline: _panel_filleted
       top_plate_cutout_draw_front:
         outline: _rotary_mcu_cutout
         layer: F.SilkS
