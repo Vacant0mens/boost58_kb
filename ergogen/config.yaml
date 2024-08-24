@@ -333,6 +333,7 @@ pcbs:
         layer: B.SilkS
       panel_wall:
         outline: panel_wall
+        layer: Dwgs.User
     references: true
     template: kicad8
     footprints:
