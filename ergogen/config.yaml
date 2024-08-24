@@ -302,7 +302,7 @@ outlines:
   panel_wall:
   - what: outline
     name: _panel_wall_full
-    fillet: 1
+    fillet: 0.4
   bottom_plate:
   - what: outline
     name: _wall_inner
@@ -327,6 +327,8 @@ pcbs:
       keycap_outline_draw_back:
         outline: _keycap_outline
         layer: B.SilkS
+      panel_wall:
+        outline: panel_wall
     references: true
     template: kicad8
     footprints:
