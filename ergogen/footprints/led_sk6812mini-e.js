@@ -179,8 +179,6 @@ module.exports = {
   (segment (start ${p.eaxy(2.7, -0.7)}) (end ${p.eaxy(3.4, -0.7)}) (width ${p.vcc_trace_width}) (layer "F.Cu") (net ${p.P1.index}))
   (via (at ${p.eaxy(3.8, 0.7)}) (size ${p.via_size}) (drill ${p.via_drill}) (layers "F.Cu" "B.Cu") (net ${p.P1.index}))
   (segment (start ${p.eaxy(2.7, 0.7)}) (end ${p.eaxy(3.8, 0.7)}) (width ${p.vcc_trace_width}) (layer "B.Cu") (net ${p.P1.index}))
-  (via (at ${p.eaxy(3.8, 2)}) (size ${p.via_size}) (drill ${p.via_drill}) (layers "F.Cu" "B.Cu") (net ${p.P1.index}))
-  (segment (start ${p.eaxy(3.8, 0.7)}) (end ${p.eaxy(3.8, 2)}) (width ${p.vcc_trace_width}) (layer "B.Cu") (net ${p.P1.index}))
   ${'' /* Data signal out trace */}
   (segment (start ${p.eaxy(4.95, -0.7)}) (end ${p.eaxy(2.7, -0.7)}) (width ${p.signal_trace_width}) (layer "B.Cu") (net ${p.P2.index}))
   ${p.choc_v2_stab_pth_as_via ? '' : `(via (at ${p.eaxy(4.95, -0.7)}) (size ${p.via_size}) (drill ${p.via_drill}) (layers "F.Cu" "B.Cu") (net ${p.P2.index}))`}
@@ -194,8 +192,6 @@ module.exports = {
   (segment (start ${p.eaxy(-2.7, -0.7)}) (end ${p.eaxy(-3.4, -0.7)}) (width ${p.gnd_trace_width}) (layer "B.Cu") (net ${p.P3.index}))
   (via (at ${p.eaxy(-3.8, 0.7)}) (size ${p.via_size}) (drill ${p.via_drill}) (layers "F.Cu" "B.Cu") (net ${p.P3.index}))
   (segment (start ${p.eaxy(-2.7, 0.7)}) (end ${p.eaxy(-3.8, 0.7)}) (width ${p.gnd_trace_width}) (layer "F.Cu") (net ${p.P3.index}))
-  (via (at ${p.eaxy(-3.8, 2)}) (size ${p.via_size}) (drill ${p.via_drill}) (layers "F.Cu" "B.Cu") (net ${p.P3.index}))
-  (segment (start ${p.eaxy(-3.8, 0.7)}) (end ${p.eaxy(-3.8, 2)}) (width ${p.vcc_trace_width}) (layer "B.Cu") (net ${p.P3.index}))
   ${'' /* Data signal in trace */}
   (segment (start ${p.eaxy(-4.95, -0.7)}) (end ${p.eaxy(-2.7, -0.7)}) (width ${p.signal_trace_width}) (layer "F.Cu") (net ${p.P4.index}))
   ${p.choc_v2_stab_pth_as_via ? '' : `(via (at ${p.eaxy(-4.95, -0.7)}) (size ${p.via_size}) (drill ${p.via_drill}) (layers "F.Cu" "B.Cu") (net ${p.P4.index}))`}
