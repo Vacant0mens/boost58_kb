@@ -401,7 +401,10 @@ pcbs:
           P4: "LED{{led_row}}{{led_col}}"
           reversible: true
           include_keepout: true
-          include_courtyard: false
+          include_courtyard: true
+          signal_trace_width: 0.2
+          gnd_trace_width: 0.2
+          vcc_trace_width: 0.2
           choc_v2_stab_pth_as_via: true
           via_size: 0.56
           via_drill: 0.3
