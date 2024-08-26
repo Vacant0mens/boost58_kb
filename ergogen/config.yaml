@@ -227,7 +227,7 @@ outlines:
   - what: rectangle
     where:
       ref: matrix_inner_num
-      shift: [22, 13.4]
+      shift: [24, 13.4]
     size: [10, 4]
   _wall_outer:
   - what: outline
