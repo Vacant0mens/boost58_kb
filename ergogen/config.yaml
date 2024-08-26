@@ -341,22 +341,22 @@ pcbs:
           designator: M3_
           hole_size: screw_hole_radius * 2
           hole_drill: screw_hole_radius * 2
-      promicro:
-        what: promicro
-        where:
-          ref: matrix_inner_num
-          shift: [22, -6]
-          rotate: -90
-        params:
-          orientation: down
-      # promicro_reverse:
+      # promicro:
       #   what: promicro
       #   where:
       #     ref: matrix_inner_num
-      #     shift: [23, -8]
+      #     shift: [22, -6]
       #     rotate: -90
       #   params:
       #     orientation: up
+      sparkfun_promicro:
+        what: sparkfun_promicro_qwiic_pinless
+        where:
+          ref: matrix_inner_num
+          shift: [24, -6]
+          rotate: -90
+        params:
+          reversible: true
       choc_hotswap:
         what: switch_choc_v1_v2
         where: [key]
