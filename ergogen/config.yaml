@@ -319,18 +319,15 @@ pcbs:
     outlines:
       main:
         outline: _panel_filleted
-      top_plate_cutout_draw_front:
-        outline: _rotary_mcu_cutout
-        layer: F.SilkS
-      top_plate_cutout_draw_back:
-        outline: _rotary_mcu_cutout
-        layer: B.SilkS
       keycap_outline_draw_front:
         outline: _keycap_outline
         layer: F.SilkS
       keycap_outline_draw_back:
         outline: _keycap_outline
         layer: B.SilkS
+      top_plate_cutout_draw:
+        outline: _rotary_mcu_cutout
+        layer: Dwgs.User
       panel_wall:
         outline: panel_wall
         layer: Dwgs.User
