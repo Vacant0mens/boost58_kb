@@ -1,5 +1,5 @@
 
-(rules PCB staggered_col58
+(rules PCB boost58
   (snap_angle 
     fortyfive_degree
   )
@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 20987)
+    (start_pass_no 1238)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -40,6 +40,15 @@
     )
     (attach off)
   )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
   (padstack "Via[0-1]_560:300_um"
     (shape
       (circle F.Cu 560.0 0.0 0.0)
@@ -53,10 +62,16 @@
     "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
   )
   (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
     "Via[0-1]_560:300_um" "Via[0-1]_560:300_um" default
   )
   (via 
     "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via 
     "Via[0-1]_560:300_um-kicad_default" "Via[0-1]_560:300_um" "kicad_default"
@@ -68,15 +83,15 @@
     "kicad_default" "Via[0-1]_600:300_um-kicad_default"
   )
   (class "kicad_default"
-    RAW GND RST VCC P21 P20 P19 P18
-    P15 P14 P16 P10 P1 P0 P2 P3
-    P4 P5 P6 P7 P8 P9 DP21 P1011
-    P1010 P1021 P1020 P1031 P1030 P1041 P1040 DP20
-    P1012 P1022 P1032 P1042 DP19 P1013 P1023 P1033
-    P1043 DP18 P1014 P1024 P1034 P1044 DP15 P1015
-    P1025 P1035 P1045 DP14 P1002 P1001 P1003 P1004
-    P1005 DP16 "BAT_P" P10u01 P10u02 P10u03 P10u04 P10u05
-    P10u06
+    LED RAW GND RST VCC D29 D28 D27
+    D26 D22 D20 D23 D21 D1 D0 D2
+    D3 D4 D5 D6 D7 D8 D9 DD29
+    LED11 LED10 LED21 LED20 LED31 LED30 LED41 LED40
+    DD28 LED12 LED22 LED32 LED42 DD27 LED13 LED23
+    LED33 LED43 DD26 LED14 LED24 LED34 LED44 DD22
+    LED15 LED25 LED35 LED45 DD20 LED02 LED01 LED03
+    LED04 LED05 DD23 "BAT_P" LEDu01 LEDu02 LEDu03 LEDu04
+    LEDu05 LEDu06
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

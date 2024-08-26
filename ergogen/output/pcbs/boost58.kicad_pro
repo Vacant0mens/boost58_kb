@@ -220,7 +220,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "staggered_col58.kicad_pro",
+    "filename": "boost58.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -257,7 +257,7 @@
       "netlist": "",
       "plot": "",
       "pos_files": "",
-      "specctra_dsn": "staggered_col58.dsn",
+      "specctra_dsn": "boost58.dsn",
       "step": "",
       "svg": "",
       "vrml": ""
