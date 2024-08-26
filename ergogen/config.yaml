@@ -382,7 +382,7 @@ pcbs:
           rotate: diode_rotation
         params:
           reversible: true
-          include_tht: true
+          include_tht: false
           # Row-To-Column diode orientation
           from: "D{{column_net}}"
           to: "{{column_net}}"
