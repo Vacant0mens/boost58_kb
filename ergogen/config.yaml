@@ -367,9 +367,13 @@ pcbs:
           to: "D{{column_net}}"
           include_keycap: true
           include_corner_marks: true
-          include_stabilizer_nets: true
-          LEFTSTAB: "P10{{led_row_next}}{{led_col_next}}"
-          RIGHTSTAB: "P10{{led_row}}{{led_col}}"
+          include_plated_holes: true
+          include_v1_stabilizer_nets: true
+          include_v2_stabilizer_nets: true
+          LEFTSTABV2: "LED{{led_row_next}}{{led_col_next}}"
+          RIGHTSTABV2: "LED{{led_row}}{{led_col}}"
+          LEFTSTABV1: VCC
+          RIGHTSTABV1: GND
           reversible: true
           hotswap: true
         adjust:
