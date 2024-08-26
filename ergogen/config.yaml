@@ -44,19 +44,19 @@ points:
       #   origin: [0, -17]
       rows:
         bottom:
-          row_net: P5
+          row_net: D5
           led_row: 1
           led_row_next: 1
         home:
-          row_net: P4
+          row_net: D4
           led_row: 2
           led_row_next: 2
         top:
-          row_net: P3
+          row_net: D3
           led_row: 3
           led_row_next: 3
         num:
-          row_net: P2
+          row_net: D2
           led_row: 4
           led_row_next: 4
       columns:
@@ -65,37 +65,37 @@ points:
             bind: [2, 2, 4, 4]
             led_col: '0'
             led_col_next: 1
-            column_net: P21
+            column_net: D29
         pinky:
           key:
             led_col: 1
             led_col_next: 2
-            column_net: P20
+            column_net: D28
             stagger: 10
         ring:
           key:
             led_col: 2
             led_col_next: 3
-            column_net: P19
+            column_net: D27
             stagger: 12
         middle:
           key:
             led_col: 3
             led_col_next: 4
-            column_net: P18
+            column_net: D26
             stagger: 4
         index:
           key:
             led_col: 4
             led_col_next: 5
             stagger: -4
-            column_net: P15
+            column_net: D22
         inner:
           key:
             led_col: 5
             led_col_next: '0'
             stagger: -6
-            column_net: P14
+            column_net: D20
           rows:
             bottom:
               bind: [2, 10, 8, 2]
@@ -120,14 +120,14 @@ points:
         led_row: '0'
         led_row_next: '0'
         spread: key_spread
-        row_net: P6
+        row_net: D6
       rows:
         only:
           padding: key_padding
       columns:
         first:
           key:
-            column_net: P19
+            column_net: D27
             led_col: 1
             led_col_next: 2
           rows:
@@ -135,7 +135,7 @@ points:
               bind: [6, 2, 4, 22]
         second:
           key:
-            column_net: P18
+            column_net: D26
             led_col: 2
             led_col_next: 3
           rows:
@@ -147,7 +147,7 @@ points:
             led_col_next: 4
             stagger: -1
             splay: -5
-            column_net: P15
+            column_net: D22
           rows:
             only:
               bind: [8, 4, 4, 4]
@@ -158,7 +158,7 @@ points:
             spread: 19
             splay: -15
             origin: [-9, -9.5]
-            column_net: P14
+            column_net: D20
           rows:
             only:
               bind: [4, 4, 4, 4]
@@ -169,7 +169,7 @@ points:
             spread: 18
             splay: -20
             origin: [-9, -9.5]
-            column_net: P16
+            column_net: D23
           rows:
             only:
               bind: [4, 4, 4, 8]
@@ -393,8 +393,8 @@ pcbs:
           shift: [0, 5]
         params:
           designator: "L"
-          P2: "P10{{led_row_next}}{{led_col_next}}"
-          P4: "P10{{led_row}}{{led_col}}"
+          P2: "LED{{led_row_next}}{{led_col_next}}"
+          P4: "LED{{led_row}}{{led_col}}"
           reversible: true
           include_keepout: true
           include_courtyard: false
@@ -409,8 +409,8 @@ pcbs:
           rotate: -90
         params:
           A: VCC
-          B: P0
-          C: P1
+          B: D0
+          C: D1
           D: GND
           reverse: true
           symmetric: false
@@ -438,10 +438,10 @@ pcbs:
           rotate: -90
         params:
           designator: Rotary
-          from: P16
-          to: P4
-          A: P7
-          B: P8
+          from: D23
+          to: D4
+          A: D7
+          B: D8
           C: GND
       underglow_b0:
         what: led_WS2812B
@@ -452,8 +452,8 @@ pcbs:
         params:
           side: B
           designator: UB_
-          din: P1001
-          dout: P10u01
+          din: LED01
+          dout: LEDu01
       underglow_f0:
         what: led_WS2812B
         where:
@@ -463,8 +463,8 @@ pcbs:
         params:
           side: F
           designator: UA_
-          din: P1001
-          dout: P10u01
+          din: LED01
+          dout: LEDu01
       underglow_b1:
         what: led_WS2812B
         where:
@@ -474,8 +474,8 @@ pcbs:
         params:
           side: B
           designator: UB_
-          din: P10u01
-          dout: P10u02
+          din: LEDu01
+          dout: LEDu02
       underglow_f1:
         what: led_WS2812B
         where:
@@ -485,8 +485,8 @@ pcbs:
         params:
           side: F
           designator: UA_
-          din: P10u01
-          dout: P10u02
+          din: LEDu01
+          dout: LEDu02
 
       underglow_b2:
         what: led_WS2812B
@@ -497,8 +497,8 @@ pcbs:
         params:
           side: B
           designator: UB_
-          din: P10u02
-          dout: P10u03
+          din: LEDu02
+          dout: LEDu03
       underglow_f2:
         what: led_WS2812B
         where:
@@ -508,8 +508,8 @@ pcbs:
         params:
           side: F
           designator: UA_
-          din: P10u02
-          dout: P10u03
+          din: LEDu02
+          dout: LEDu03
       underglow_b3:
         what: led_WS2812B
         where:
@@ -519,8 +519,8 @@ pcbs:
         params:
           side: B
           designator: UB_
-          din: P10u03
-          dout: P10u04
+          din: LEDu03
+          dout: LEDu04
       underglow_f3:
         what: led_WS2812B
         where:
@@ -530,8 +530,8 @@ pcbs:
         params:
           side: F
           designator: UA_
-          din: P10u03
-          dout: P10u04
+          din: LEDu03
+          dout: LEDu04
 
       underglow_b4:
         what: led_WS2812B
@@ -542,8 +542,8 @@ pcbs:
         params:
           side: B
           designator: UB_
-          din: P10u04
-          dout: P10u05
+          din: LEDu04
+          dout: LEDu05
       underglow_f4:
         what: led_WS2812B
         where:
@@ -553,8 +553,8 @@ pcbs:
         params:
           side: F
           designator: UA_
-          din: P10u04
-          dout: P10u05
+          din: LEDu04
+          dout: LEDu05
       underglow_b5:
         what: led_WS2812B
         where:
@@ -564,8 +564,8 @@ pcbs:
         params:
           side: B
           designator: UB_
-          din: P10u05
-          dout: P10u06
+          din: LEDu05
+          dout: LEDu06
       underglow_f5:
         what: led_WS2812B
         where:
@@ -575,5 +575,5 @@ pcbs:
         params:
           side: F
           designator: UA_
-          din: P10u05
-          dout: P10u06
+          din: LEDu05
+          dout: LEDu06
