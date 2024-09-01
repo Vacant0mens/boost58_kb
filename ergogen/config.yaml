@@ -269,18 +269,8 @@ outlines:
   - what: rectangle
     where:
       ref: matrix_inner_top
-      shift: [24, -8]
-    size: [22, 79]
-  - what: polygon
-    points:
-    - ref: matrix_inner_bottom
-      shift: [13, -9]
-    - ref: matrix_inner_bottom
-      shift: [19, -9]
-    - ref: matrix_inner_bottom
-      shift: [19, -16.3]
-    - ref: thumb_inner_only
-      shift: [-17.966, 12]
+      shift: [26, -3]
+    size: [19, 69]
 
   screw_posts:
   - what: outline
