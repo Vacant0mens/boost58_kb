@@ -448,137 +448,68 @@ pcbs:
           A: D7
           B: D8
           C: GND
-      underglow_b0:
+      underglow_0:
         what: led_WS2812B
         where:
           ref: thumb_first_only
-          shift: [-10, 28]
+          shift: [-10, 32]
           rotate: -90
         params:
-          side: B
-          designator: UB_
+          designator: U_
           din: LED01
           dout: LEDu01
-      underglow_f0:
+          reversible: true
+      underglow_1:
         what: led_WS2812B
         where:
           ref: thumb_first_only
-          shift: [-10, 35]
+          shift: [-10, 70]
           rotate: -90
         params:
-          side: F
-          designator: UA_
-          din: LED01
-          dout: LEDu01
-      underglow_b1:
-        what: led_WS2812B
-        where:
-          ref: thumb_first_only
-          shift: [-10, 66]
-          rotate: -90
-        params:
-          side: B
-          designator: UB_
+          designator: U_
           din: LEDu01
           dout: LEDu02
-      underglow_f1:
-        what: led_WS2812B
-        where:
-          ref: thumb_first_only
-          shift: [-10, 73]
-          rotate: -90
-        params:
-          side: F
-          designator: UA_
-          din: LEDu01
-          dout: LEDu02
-
-      underglow_b2:
+          reversible: true
+      underglow_2:
         what: led_WS2812B
         where:
           ref: thumb_second_only
-          shift: [10, 26]
+          shift: [10, 32]
           rotate: -90
         params:
-          side: B
-          designator: UB_
+          designator: U_
           din: LEDu02
           dout: LEDu03
-      underglow_f2:
+          reversible: true
+      underglow_3:
         what: led_WS2812B
         where:
           ref: thumb_second_only
-          shift: [10, 33]
+          shift: [10, 70]
           rotate: -90
         params:
-          side: F
-          designator: UA_
-          din: LEDu02
-          dout: LEDu03
-      underglow_b3:
-        what: led_WS2812B
-        where:
-          ref: thumb_second_only
-          shift: [10, 64]
-          rotate: -90
-        params:
-          side: B
-          designator: UB_
+          designator: U_
           din: LEDu03
           dout: LEDu04
-      underglow_f3:
-        what: led_WS2812B
-        where:
-          ref: thumb_second_only
-          shift: [10, 71]
-          rotate: -90
-        params:
-          side: F
-          designator: UA_
-          din: LEDu03
-          dout: LEDu04
-
-      underglow_b4:
-        what: led_WS2812B
-        where:
-          ref: matrix_inner_bottom
-          shift: [10, 0]
-          rotate: -90
-        params:
-          side: B
-          designator: UB_
-          din: LEDu04
-          dout: LEDu05
-      underglow_f4:
+          reversible: true
+      underglow_4:
         what: led_WS2812B
         where:
           ref: matrix_inner_bottom
           shift: [10, 7]
           rotate: -90
         params:
-          side: F
-          designator: UA_
+          designator: U_
           din: LEDu04
           dout: LEDu05
-      underglow_b5:
-        what: led_WS2812B
-        where:
-          ref: matrix_inner_top
-          shift: [10, 0]
-          rotate: -90
-        params:
-          side: B
-          designator: UB_
-          din: LEDu05
-          dout: LEDu06
-      underglow_f5:
+          reversible: true
+      underglow_5:
         what: led_WS2812B
         where:
           ref: matrix_inner_top
           shift: [10, 7]
           rotate: -90
         params:
-          side: F
-          designator: UA_
+          designator: U_
           din: LEDu05
           dout: LEDu06
