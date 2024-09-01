@@ -220,6 +220,25 @@ points:
       anchor:
         ref: matrix_inner_num
         shift: [10, 6]
+    matrix_mx:
+      $extends: points.zones.matrix
+      key:
+        tags:
+        - mx_key
+        spread: mx_key_spread
+        padding: mx_key_padding
+        bind: [2, 2, 2, 2]
+    thumb_mx:
+      $extends: points.zones.thumb
+      anchor:
+        ref: matrix_mx_inner_bottom
+      key:
+        tags:
+        - mx_key
+        spread: mx_key_spread
+      rows:
+        only:
+          padding: mx_key_padding
 outlines:
   _keycap_outline:
   - what: rectangle
