@@ -245,6 +245,21 @@ outlines:
   - what: outline
     name: _panel
     fillet: 0.4
+  # _bento_inner:
+  # - what: outline
+  #   name: _wall_outer
+  #   expand: 0.4
+  #   joints: 1
+  # _bento_outer:
+  # - what: outline
+  #   name: _bento_inner
+  #   expand: 5.2
+  #   joints: 1
+  # bento:
+  # - what: outline
+  #   name: _bento_outer
+  # - -_panel
+  # - ^_bento_inner
 
   _screws:
   - what: circle
