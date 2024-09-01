@@ -20,17 +20,17 @@ module.exports = {
             (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
             `
         const front_content = `
-            (fp_line (start -2.5 -2.5) (end -2.5 2.5) (layer F.SilkS) (width 0.15))
-            (fp_line (start -2.5 2.5) (end 2.5 2.5) (layer F.SilkS) (width 0.15))
-            (fp_line (start 2.5 2.5) (end 2.5 -2.5) (layer F.SilkS) (width 0.15))
-            (fp_line (start 2.5 -2.5) (end -2.5 -2.5) (layer F.SilkS) (width 0.15))
+            (fp_line (start -3.75 -2.5) (end -3.75 2.5) (layer F.SilkS) (width 0.15))
+            (fp_line (start -3.75 2.5) (end 3.75 2.5) (layer F.SilkS) (width 0.15))
+            (fp_line (start 3.75 2.5) (end 3.75 -2.5) (layer F.SilkS) (width 0.15))
+            (fp_line (start 3.75 -2.5) (end -3.75 -2.5) (layer F.SilkS) (width 0.15))
 
-            (fp_line (start -3.5 -3) (end -3.5 3) (layer F.SilkS) (width 0.15))
-            (fp_line (start -3.5 3) (end 3.5 3) (layer F.SilkS) (width 0.15))
-            (fp_line (start 3.5 3) (end 3.5 -3) (layer F.SilkS) (width 0.15))
-            (fp_line (start 3.5 -3) (end -3.5 -3) (layer F.SilkS) (width 0.15))
+            (fp_line (start -4 -3) (end -4 3) (layer F.SilkS) (width 0.15))
+            (fp_line (start -4 3) (end 4 3) (layer F.SilkS) (width 0.15))
+            (fp_line (start 4 3) (end 4 -3) (layer F.SilkS) (width 0.15))
+            (fp_line (start 4 -3) (end -4 -3) (layer F.SilkS) (width 0.15))
 
-            (fp_poly (pts (xy 3.5 2) (xy 3.5 3) (xy 2.5 3)) (layer F.SilkS) (width 0.1))
+            (fp_poly (pts (xy 3 3) (xy 4 3) (xy 4 2)) (layer F.SilkS) (width 0.1))
             
             (pad 1 smd rect (at -2.2 -0.875 ${p.r}) (size 2.6 1) (layers F.Cu F.Paste F.Mask) ${p.VCC})
             (pad 2 smd rect (at -2.2 0.875 ${p.r}) (size 2.6 1) (layers F.Cu F.Paste F.Mask) ${p.dout})
@@ -46,18 +46,18 @@ module.exports = {
         )
         `
         const back_content = `
-            (fp_text value "%R" (at 0 0 ${90 + p.r}) (layer B.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
-            (fp_line (start -2.5 -2.5) (end -2.5 2.5) (layer B.SilkS) (width 0.15))
-            (fp_line (start -2.5 2.5) (end 2.5 2.5) (layer B.SilkS) (width 0.15))
-            (fp_line (start 2.5 2.5) (end 2.5 -2.5) (layer B.SilkS) (width 0.15))
-            (fp_line (start 2.5 -2.5) (end -2.5 -2.5) (layer B.SilkS) (width 0.15))
+            (fp_text value "%R" (at 0 0 ${90 + p.r}) (layer B.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15)) (justify mirror)))
+            (fp_line (start -3.75 -2.5) (end -3.75 2.5) (layer B.SilkS) (width 0.15))
+            (fp_line (start -3.75 2.5) (end 3.75 2.5) (layer B.SilkS) (width 0.15))
+            (fp_line (start 3.75 2.5) (end 3.75 -2.5) (layer B.SilkS) (width 0.15))
+            (fp_line (start 3.75 -2.5) (end -3.75 -2.5) (layer B.SilkS) (width 0.15))
 
-            (fp_line (start -3.5 -3) (end -3.5 3) (layer B.SilkS) (width 0.15))
-            (fp_line (start -3.5 3) (end 3.5 3) (layer B.SilkS) (width 0.15))
-            (fp_line (start 3.5 3) (end 3.5 -3) (layer B.SilkS) (width 0.15))
-            (fp_line (start 3.5 -3) (end -3.5 -3) (layer B.SilkS) (width 0.15))
+            (fp_line (start -4 -3) (end -4 3) (layer B.SilkS) (width 0.15))
+            (fp_line (start -4 3) (end 4 3) (layer B.SilkS) (width 0.15))
+            (fp_line (start 4 3) (end 4 -3) (layer B.SilkS) (width 0.15))
+            (fp_line (start 4 -3) (end -4 -3) (layer B.SilkS) (width 0.15))
 
-            (fp_poly (pts (xy 3.5 -3) (xy 3.5 -2) (xy 2.5 -3)) (layer B.SilkS) (width 0.1))
+            (fp_poly (pts (xy 3 -3) (xy 4 -3) (xy 4 -2)) (layer B.SilkS) (width 0.1))
 
             (pad 1 smd rect (at -2.2 -0.875 ${p.r}) (size 2.6 1) (layers B.Cu B.Paste B.Mask) ${p.dout})
             (pad 2 smd rect (at -2.2 0.875 ${p.r}) (size 2.6 1) (layers B.Cu B.Paste B.Mask) ${p.VCC})
