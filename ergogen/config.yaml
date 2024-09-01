@@ -21,9 +21,9 @@ presets:
     led_pos_x: 0 # Led X position relative to the switch center
     led_pos_y: 5 # Led Y position relative to the switch center
     led_rotation: 0 # Led rotation
-    diode_pos_x: 0 # diode Y position relative to switch center
-    diode_pos_y: -8.5 # diode Y position relative to switch center
-    diode_rotation: 0 # Diode rotation
+    diode_pos_x: -8 # diode Y position relative to switch center
+    diode_pos_y: 2 # diode Y position relative to switch center
+    diode_rotation: -90 # Diode rotation
     switch_rotation: 180 # Hotswap south, led north
     screw_hole_radius: 1.6 # M3 hole; 1.6 x 2 = diameter: 3.2
     heat_insert_hole_radius: 2.4 # 2.4mm x 2 = 4.8mm (threaded inserts are 5mm)
