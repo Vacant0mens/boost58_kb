@@ -40,7 +40,7 @@ points:
         - key
         spread: key_spread
         padding: key_padding
-        bind: [2, 2, 2, 2]
+        bind: [4, 4, 4, 4]
       rows:
         bottom:
           row_net: D5
