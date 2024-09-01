@@ -443,8 +443,8 @@ pcbs:
           rotate: -90
         params:
           designator: Rotary
-          from: D23
-          to: D4
+          from: D20
+          to: D6
           A: D7
           B: D8
           C: GND
