@@ -244,6 +244,15 @@ outlines:
   - what: rectangle
     where: [key]
     size: [keycap_w, keycap_h]
+  _panel_mx:
+  - what: rectangle
+    where: [mx_key]
+    bound: true
+    size: [mx_key_spread - 4, mx_key_padding - 3]
+  _keycap_outline_mx:
+  - what: rectangle
+    where: [mx_key]
+    size: [mx_keycap_w, mx_keycap_h]
   _panel:
   - what: rectangle
     where: [key]
