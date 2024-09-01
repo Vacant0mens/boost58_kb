@@ -43,19 +43,19 @@ points:
         bind: [4, 4, 4, 4]
       rows:
         bottom:
-          row_net: D5
+          row_net: P5
           led_row: 1
           led_row_next: 1
         home:
-          row_net: D4
+          row_net: P4
           led_row: 2
           led_row_next: 2
         top:
-          row_net: D3
+          row_net: P3
           led_row: 3
           led_row_next: 3
         num:
-          row_net: D2
+          row_net: P2
           led_row: 4
           led_row_next: 4
       columns:
@@ -64,37 +64,37 @@ points:
             bind: [2, 2, 5, 4]
             led_col: '0'
             led_col_next: 1
-            column_net: D29
+            column_net: P21
         pinky:
           key:
             led_col: 1
             led_col_next: 2
-            column_net: D28
+            column_net: P20
             stagger: 10
         ring:
           key:
             led_col: 2
             led_col_next: 3
-            column_net: D27
+            column_net: P19
             stagger: 12
         middle:
           key:
             led_col: 3
             led_col_next: 4
-            column_net: D26
+            column_net: P18
             stagger: 4
         index:
           key:
             led_col: 4
             led_col_next: 5
             stagger: -4
-            column_net: D22
+            column_net: P15
         inner:
           key:
             led_col: 5
             led_col_next: '0'
             stagger: -6
-            column_net: D20
+            column_net: P14
           rows:
             bottom:
               bind: [2, 9, 8, 2]
@@ -119,14 +119,14 @@ points:
         led_row: '0'
         led_row_next: '0'
         spread: key_spread
-        row_net: D6
+        row_net: P6
       rows:
         only:
           padding: key_padding
       columns:
         first:
           key:
-            column_net: D29
+            column_net: P21
             led_col: 1
             led_col_next: 2
           rows:
@@ -134,7 +134,7 @@ points:
               bind: [6, 2, 4, 22]
         second:
           key:
-            column_net: D28
+            column_net: P20
             led_col: 2
             led_col_next: 3
           rows:
@@ -145,7 +145,8 @@ points:
             led_col: 3
             led_col_next: 4
             splay: -5
-            column_net: D27
+            origin: [-9, -9]
+            column_net: P19
           rows:
             only:
               bind: [8, 4, 4, 4]
@@ -326,22 +327,13 @@ pcbs:
           designator: M3_
           hole_size: screw_hole_radius * 2
           hole_drill: screw_hole_radius * 2
-      # promicro:
-      #   what: promicro
-      #   where:
-      #     ref: matrix_inner_num
-      #     shift: [22, -6]
-      #     rotate: -90
-      #   params:
-      #     orientation: up
-      sparkfun_promicro:
-        what: sparkfun_promicro_qwiic_pinless
+      promicro:
+        what: promicro_pretty
         where:
           ref: matrix_inner_num
           shift: [26, -6]
           rotate: -90
         params:
-          reversible: true
       choc_hotswap:
         what: switch_choc_v1_v2
         where: [key]
@@ -430,10 +422,10 @@ pcbs:
           rotate: -90
         params:
           designator: Rotary
-          from: D20
-          to: D6
-          A: D7
-          B: D8
+          from: P14
+          to: P6
+          A: P7
+          B: P8
           C: GND
       underglow_0:
         what: led_WS2812B
