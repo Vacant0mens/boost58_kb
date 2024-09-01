@@ -441,7 +441,7 @@ pcbs:
           A: P7
           B: P8
           C: GND
-      underglow_0:
+      underglow_1:
         what: led_WS2812B
         where:
           ref: thumb_first_only
@@ -452,7 +452,7 @@ pcbs:
           din: LED01
           dout: LEDu01
           reversible: true
-      underglow_1:
+      underglow_2:
         what: led_WS2812B
         where:
           ref: thumb_first_only
@@ -463,7 +463,7 @@ pcbs:
           din: LEDu01
           dout: LEDu02
           reversible: true
-      underglow_2:
+      underglow_3:
         what: led_WS2812B
         where:
           ref: thumb_second_only
@@ -474,7 +474,7 @@ pcbs:
           din: LEDu02
           dout: LEDu03
           reversible: true
-      underglow_3:
+      underglow_4:
         what: led_WS2812B
         where:
           ref: thumb_second_only
@@ -485,7 +485,7 @@ pcbs:
           din: LEDu03
           dout: LEDu04
           reversible: true
-      underglow_4:
+      underglow_5:
         what: led_WS2812B
         where:
           ref: matrix_inner_bottom
@@ -496,7 +496,7 @@ pcbs:
           din: LEDu04
           dout: LEDu05
           reversible: true
-      underglow_5:
+      underglow_6:
         what: led_WS2812B
         where:
           ref: matrix_inner_top
