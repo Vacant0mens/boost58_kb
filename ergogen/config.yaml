@@ -144,7 +144,6 @@ points:
           key:
             led_col: 3
             led_col_next: 4
-            stagger: -1
             splay: -5
             column_net: D27
           rows:
@@ -217,13 +216,13 @@ outlines:
   - what: rectangle
     where:
       ref: matrix_inner_home
-      shift: [35.4, 0.5]
+      shift: [36, 0.5]
     size: [4, 31]
   _mcu_usb_wall_cutout:
   - what: rectangle
     where:
       ref: matrix_inner_num
-      shift: [24, 13.4]
+      shift: [26, 13.4]
     size: [10, 4]
   _wall_outer:
   - what: outline
@@ -349,7 +348,7 @@ pcbs:
         what: sparkfun_promicro_qwiic_pinless
         where:
           ref: matrix_inner_num
-          shift: [24, -6]
+          shift: [26, -6]
           rotate: -90
         params:
           reversible: true
@@ -408,7 +407,7 @@ pcbs:
         what: trrs
         where:
           ref: matrix_inner_home
-          shift: [34, 8]
+          shift: [36, 8]
           rotate: -90
         params:
           A: VCC
@@ -423,7 +422,7 @@ pcbs:
           reversible: true
         where:
           ref: matrix_inner_bottom
-          shift: [32.1, 8]
+          shift: [33.6, 8]
           rotate: -90
       power_switch:
         what: power_switch_smd_side
@@ -431,13 +430,13 @@ pcbs:
           reversible: true
         where:
           ref: matrix_inner_home
-          shift: [32.4, -1]
+          shift: [33.7, -1]
           # rotate: 90
       encoder_top:
         what: rotary
         where:
           ref: matrix_inner_home
-          shift: [23, -8]
+          shift: [24, -8]
           rotate: -90
         params:
           designator: Rotary
@@ -494,7 +493,7 @@ pcbs:
         what: led_WS2812B
         where:
           ref: matrix_inner_bottom
-          shift: [10, 7]
+          shift: [11, 7]
           rotate: -90
         params:
           designator: U_
@@ -505,9 +504,10 @@ pcbs:
         what: led_WS2812B
         where:
           ref: matrix_inner_top
-          shift: [10, 7]
+          shift: [11, 7]
           rotate: -90
         params:
           designator: U_
           din: LEDu05
           dout: LEDu06
+          reversible: true
