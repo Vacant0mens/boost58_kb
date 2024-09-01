@@ -20,4 +20,4 @@ I designed this board because I couldn't find any options that fit my requiremen
 I designed this with the intention of making it my dream keyboard, but also available and accessible to others. I am open to suggestions and PR's.
 
 # Thanks
-Thanks to [ergogen](https://github.com/ergogen/ergogen) for the base software to be able to create this, and [ceoloide](https://github.com/ceoloide/ergogen-footprints) for the footprints and examples.
+Thanks to [ergogen](https://github.com/ergogen/ergogen) for the base software to be able to create this, [ceoloide](https://github.com/ceoloide/ergogen-footprints) for the footprints and examples, and [benvallack](https://github.com/benvallack) for the inspiration and the `promicro_pretty` footprint (it's amazing).
