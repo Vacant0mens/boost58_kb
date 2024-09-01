@@ -28,6 +28,21 @@ presets:
     screw_hole_radius: 1.6 # M3 hole; 1.6 x 2 = diameter: 3.2
     heat_insert_hole_radius: 2.4 # 2.4mm x 2 = 4.8mm (threaded inserts are 5mm)
     screw_material_radius: 3.2 # 3.2 x 2 = 6.4 diameter -- three wall lines of 0.4mm
+    mx_kx: u # spacing between key centers (X-axis)
+    mx_ky: u # spacing between key centers (Y-axis)
+    mx_key_spread: 19 # horizontal space between columns (default: 19)
+    mx_key_padding: 19 # vertical padding between keys (deafult: 19)
+    mx_key_cutout_w: 14 # key cutout hole width (cherry: 14, choc: 13.8)
+    mx_key_cutout_h: 14 # key cutout hole height (cherry: 14, choc: 13.8)
+    mx_keycap_w: 18 # keycap width (cherry: 18, choc: 17.5)
+    mx_keycap_h: 18 # keycap height (cherry: 18, choc: 16.5)
+    mx_led_pos_x: 0 # Led X position relative to the switch center
+    mx_led_pos_y: -4.75 # Led Y position relative to the switch center
+    mx_led_rotation: 0 # Led rotation
+    mx_diode_pos_y: 2 # How much to shift to avoid overlap
+    mx_diode_pos_x: -8
+    mx_diode_rotation: -90 # Diode rotation
+    mx_switch_rotation: 180 # Hotswap north, led south
 units:
   $extends: meta.switch
 points:

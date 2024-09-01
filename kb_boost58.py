@@ -79,15 +79,15 @@ class Boost58Keyboard(KMKKeyboard):
         if '_LEFT' in os.listdir():
             # LEFT
             self.is_right = False
-            split_args['split_side'] = SplitSide.LEFT
+            # split_args['split_side'] = SplitSide.LEFT
             self.debug("set to Left")
             self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
             self.led_key_pos = LED_POSITION_LEFT
         elif '_RIGHT' in os.listdir():
             # RIGHT
             self.is_right = True
-            split_args['split_side'] = SplitSide.RIGHT
-            split_args['uart_flip'] = True
+            # split_args['split_side'] = SplitSide.RIGHT
+            # split_args['uart_flip'] = True
             self.debug("set to Right")
             self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
             self.led_key_pos = LED_POSITION_RIGHT
