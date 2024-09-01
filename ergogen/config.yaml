@@ -301,7 +301,6 @@ outlines:
 
 pcbs:
   boost58:
-    # pcb thickness: 1.6mm
     outlines:
       main:
         outline: _panel_filleted
