@@ -12,10 +12,10 @@ presets:
     # Key and keycap measures
     kx: cx # spacing between key centers (X-axis)
     ky: cy # spacing between key centers (Y-axis)
-    key_spread: 20 # horizontal space between columns (default: 19)
+    key_spread: 19 # horizontal space between columns (default: 19)
     key_padding: 19 # vertical padding between keys (deafult: 19)
-    keycap_w: 17.5 # keycap width (cherry: 18, choc: 17.5)
-    keycap_h: 16.5 # keycap height (cherry: 18, choc: 16.5)
+    keycap_w: 18 # keycap width (cherry: 18, choc: 17.5)
+    keycap_h: 18 # keycap height (cherry: 18, choc: 16.5)
     key_cutout_w: 13.8 # key cutout hole width (cherry, choc v2: 14, choc v1: 13.8)
     key_cutout_h: 13.8 # key cutout hole height (cherry, choc v2: 14, choc v1: 13.8)
     led_pos_x: 0 # Led X position relative to the switch center
