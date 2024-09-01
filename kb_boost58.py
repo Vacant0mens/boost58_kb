@@ -74,7 +74,7 @@ class Boost58Keyboard(KMKKeyboard):
         self.rotary_encoder = EncoderHandler()
         self.modules.append(self.rotary_encoder)
         self.row_pins = (board.D2, board.D3, board.D4, board.D5, board.D6)
-        self.col_pins = (board.D29, board.D28, board.D27,  board.D26,  board.D22, board.D20)
+        self.col_pins = (board.D29, board.D28, board.D27,  board.D26,  board.D22, board.D20, board.D23)
 
         if '_LEFT' in os.listdir():
             # LEFT
