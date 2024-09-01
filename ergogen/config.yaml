@@ -556,3 +556,46 @@ pcbs:
           designator: U_
           din: LEDu05
           dout: LEDu06
+          reversible: true
+  boost58_mx:
+    $extends: pcbs.boost58
+    outlines:
+      main:
+        outline: _panel_mx
+      keycap_outline_draw_front:
+        outline: _keycap_outline_mx
+        layer: F.SilkS
+      keycap_outline_draw_back:
+        outline: _keycap_outline_mx
+        layer: B.SilkS
+    footprints:
+      sparkfun_promicro:
+        where:
+          ref: matrix_mx_inner_num
+      choc_hotswap:
+        where: [none]
+      mx_hotswap:
+        where: [mx_key]
+        what: switch_mx
+        params:
+          designator: mxSW
+          from: "{{row_net}}"
+          to: "D{{column_net}}"
+          reversible: true
+          hotswap: true
+          include_corner_marks: true
+          include_keycap: true
+        adjust:
+          rotate: mx_switch_rotation
+      key_diodes:
+        where: [mx_key]
+        adjust:
+          shift: [mx_diode_pos_x, mx_diode_pos_y]
+          rotate: mx_diode_rotation
+      per_key_leds:
+        where: [mx_key]
+        params:
+          choc_v2_stab_pth_as_via: false
+      trrs:
+        where:
+          ref: matrix_mx_inner_home
