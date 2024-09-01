@@ -126,7 +126,7 @@ points:
       columns:
         first:
           key:
-            column_net: D27
+            column_net: D29
             led_col: 1
             led_col_next: 2
           rows:
@@ -134,7 +134,7 @@ points:
               bind: [6, 2, 4, 22]
         second:
           key:
-            column_net: D26
+            column_net: D28
             led_col: 2
             led_col_next: 3
           rows:
@@ -146,7 +146,7 @@ points:
             led_col_next: 4
             stagger: -1
             splay: -5
-            column_net: D22
+            column_net: D27
           rows:
             only:
               bind: [8, 4, 4, 4]
@@ -157,7 +157,7 @@ points:
             spread: 19
             splay: -15
             origin: [-9, -9.5]
-            column_net: D20
+            column_net: D26
           rows:
             only:
               bind: [4, 4, 4, 4]
@@ -168,12 +168,11 @@ points:
             spread: 18
             splay: -20
             origin: [-9, -9.5]
-            column_net: D23
+            column_net: D22
           rows:
             only:
               bind: [4, 4, 4, 8]
               led_row_next: 1
-
     screw_outer_bottom:
       key:
         tags:
