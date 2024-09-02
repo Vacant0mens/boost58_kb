@@ -468,22 +468,22 @@ pcbs:
         where:
           ref: thumb_second_only
           shift: [10, 32]
-          rotate: -90
+          rotate: 90
         params:
           designator: U_
-          din: LEDu02
-          dout: LEDu03
+          din: LEDu03
+          dout: LEDu04
           reversible: true
       underglow_4:
         what: led_WS2812B
         where:
           ref: thumb_second_only
           shift: [10, 70]
-          rotate: -90
+          rotate: 90
         params:
           designator: U_
-          din: LEDu03
-          dout: LEDu04
+          din: LEDu02
+          dout: LEDu03
           reversible: true
       underglow_5:
         what: led_WS2812B
