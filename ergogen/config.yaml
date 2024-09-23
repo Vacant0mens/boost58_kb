@@ -420,14 +420,6 @@ pcbs:
           ref: matrix_inner_bottom
           shift: [33.6, 8]
           rotate: -90
-      power_switch:
-        what: power_switch_smd_side
-        params:
-          reversible: true
-        where:
-          ref: matrix_inner_home
-          shift: [33.7, -1]
-          # rotate: 90
       encoder_top:
         what: rotary
         where:
