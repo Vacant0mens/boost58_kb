@@ -61,7 +61,7 @@ points:
       columns:
         outer:
           key:
-            bind: [2, 2, 5, 4]
+            bind: [4, 4, 5, 4]
             led_col: '0'
             led_col_next: 1
             column_net: P21
