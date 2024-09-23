@@ -70,7 +70,7 @@ points:
             led_col: 1
             led_col_next: 2
             column_net: P20
-            stagger: 10
+            stagger: 8
         ring:
           key:
             led_col: 2
