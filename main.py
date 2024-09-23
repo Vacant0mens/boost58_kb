@@ -53,7 +53,7 @@ keyboard.keymap = [
                                                                     KC.xxxxxxxxxx, KC.xxxxxxxxxx, KC.N,          KC.M,          KC.COMM,       KC.DOT,        KC.SLSH,       KC.ENT,
         KC.xxxxxxxxxx,
         KC.xxxxxxxxxx,
-                       KC.LALT,       KC.LCTL,       KC.MO(2),      KC.SPC,        KC.MO(1),      KC.MO(1),      KC.SPC,        KC.LALT,       KC.LGUI,       KC.TG(2),
+                       KC.LALT,       KC.LCTL,       KC.SPC,        KC.MO(2),      KC.MO(1),      KC.MO(1),      KC.SPC,        KC.LALT,       KC.LGUI,       KC.TG(2),
         KC.xxxxxxxxxx,
         KC.xxxxxxxxxx,
     ],
