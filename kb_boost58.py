@@ -65,8 +65,8 @@ class Boost58Keyboard(KMKKeyboard):
         self.brightness_limit = 0.35
         split_args = {
             'split_side': None,
-            'data_pin': board.D1,  # UART RX
-            'data_pin2': board.D0, # UART TX
+            'data_pin': board.D0, # UART TX
+            'data_pin2': board.D1,  # UART RX
             'split_flip': True,
             'use_pio': True,
             # 'uart_flip': True
@@ -74,7 +74,7 @@ class Boost58Keyboard(KMKKeyboard):
         self.rotary_encoder = EncoderHandler()
         self.modules.append(self.rotary_encoder)
         self.row_pins = (board.D2, board.D3, board.D4, board.D5, board.D6)
-        self.col_pins = (board.D29, board.D28, board.D27,  board.D26,  board.D22, board.D20)
+        self.col_pins = (board.D29, board.D28, board.D27,  board.D26,  board.D22, board.D20, board.D23)
 
         if '_LEFT' in os.listdir():
             # LEFT
@@ -87,7 +87,7 @@ class Boost58Keyboard(KMKKeyboard):
             # RIGHT
             self.is_right = True
             split_args['split_side'] = SplitSide.RIGHT
-            split_args['uart_flip'] = True
+            # split_args['uart_flip'] = True
             self.debug("set to Right")
             self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
             self.led_key_pos = LED_POSITION_RIGHT
