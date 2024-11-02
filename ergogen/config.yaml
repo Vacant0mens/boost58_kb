@@ -7,6 +7,7 @@ meta:
   footprint: &switch_footprint "switch_choc_v1_v2"
   switch:
     $extends: presets.choc
+  led_pin: &led_pin "P9"
 presets:
   choc:
     # Key and keycap measures
@@ -107,7 +108,7 @@ points:
               led_row_next: 'r4'
             num:
               bind: [4, 28, 2, 2]
-              led_row_next: ''
+              led_row_next: *led_pin
               led_col_next: ''
     thumb:
       anchor:
