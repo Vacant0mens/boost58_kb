@@ -379,6 +379,7 @@ pcbs:
         params:
           reversible: true
           include_tht: false
+          ref_above: false
           # Row-To-Column diode orientation
           from: "D{{column_net}}"
           to: "{{column_net}}"
@@ -386,7 +387,7 @@ pcbs:
         what: led_sk6812mini-e
         where: [key]
         adjust:
-          shift: [0, 5]
+          shift: [led_pos_x, led_pos_y]
         params:
           designator: "L"
           P2: "LED{{led_row_next}}{{led_col_next}}"
