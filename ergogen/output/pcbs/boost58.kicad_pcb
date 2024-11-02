@@ -49,7 +49,7 @@
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
-			(plotframeref no)
+			(plotframeref yes)
 			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
@@ -71,7 +71,7 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
 			(outputdirectory "")
 		)
@@ -44263,7 +44263,7 @@
 		)
 		(fp_arc
 			(start -2 -6.78)
-			(mid -2.139876 -6.382303)
+			(mid -2.139875 -6.382302)
 			(end -2.52 -6.2)
 			(stroke
 				(width 0.15)
@@ -44475,7 +44475,7 @@
 			(uuid "12bb2cbc-b40e-443b-bdde-58413942e630")
 		)
 		(pad "2" thru_hole circle
-			(at 5.000002 -3.75 10)
+			(at 5.000003 -3.75 10)
 			(size 3.3 3.3)
 			(drill 3)
 			(layers "*.Cu" "*.Mask")
