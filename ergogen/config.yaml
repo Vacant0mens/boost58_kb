@@ -409,8 +409,8 @@ pcbs:
           rotate: -90
         params:
           A: VCC
-          B: D0
-          C: D1
+          B: P0
+          C: P1
           D: GND
           reverse: true
           symmetric: false
