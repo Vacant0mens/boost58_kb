@@ -178,32 +178,32 @@ points:
         - screw
       anchor:
         ref: matrix_outer_bottom
-        shift: [11, 0]
+        shift: [11, -1.5]
     screw_outer_top:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_outer_num
-        shift: [11, 0]
+        shift: [11, -1.5]
     screw_middle_bottom:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: thumb_first_only
-        shift: [10, 11]
+        shift: [12, 13.5]
     screw_middle_top:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_ring_top
-        shift: [10, 10]
+        shift: [12, 13.5]
     screw_inner_bottom:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_inner_bottom
-        shift: [10, -11]
+        shift: [11, -11]
     screw_inner_top:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_inner_num
-        shift: [10, 6]
+        shift: [11, 6]
 outlines:
   _keycap_outline:
   - what: rectangle
