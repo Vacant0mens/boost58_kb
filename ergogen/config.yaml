@@ -350,7 +350,7 @@ pcbs:
           rotate: -90
         params:
       choc_hotswap:
-        what: switch_choc_v1_v2
+        what: *switch_footprint
         where: [key]
         params:
           designator: SW
