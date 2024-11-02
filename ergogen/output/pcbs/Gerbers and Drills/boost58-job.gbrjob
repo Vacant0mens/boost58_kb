@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "8.0.4"
     },
-    "CreationDate": "2024-08-10T13:55:05-06:00"
+    "CreationDate": "2024-11-02T00:03:46-06:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "staggered_col58",
-      "GUID": "73746167-6765-4726-9564-5f636f6c3538",
+      "Name": "boost58",
+      "GUID": "626f6f73-7435-4382-9e6b-696361645f70",
       "Revision": "0.1"
     },
     "Size": {
-      "X": 147.6965,
-      "Y": 127.6466
+      "X": 144.4708,
+      "Y": 128.6161
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -24,71 +24,56 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.2,
-      "PadToTrack": 0.2,
+      "PadToPad": 0.1,
+      "PadToTrack": 0.1,
       "TrackToTrack": 0.2,
       "MinLineWidth": 0.2
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "staggered_col58-F_Cu.gbr",
+      "Path": "boost58-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "staggered_col58-B_Cu.gbr",
+      "Path": "boost58-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "staggered_col58-F_Paste.gbr",
+      "Path": "boost58-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "staggered_col58-B_Paste.gbr",
+      "Path": "boost58-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "staggered_col58-F_Silkscreen.gbr",
+      "Path": "boost58-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "staggered_col58-B_Silkscreen.gbr",
+      "Path": "boost58-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "staggered_col58-F_Mask.gbr",
+      "Path": "boost58-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "staggered_col58-B_Mask.gbr",
+      "Path": "boost58-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "staggered_col58-User_Drawings.gbr",
-      "FileFunction": "Other,User",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "staggered_col58-Edge_Cuts.gbr",
+      "Path": "boost58-Edge_Cuts.gbr",
       "FileFunction": "Profile",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "staggered_col58-F_Fab.gbr",
-      "FileFunction": "AssemblyDrawing,Top",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "staggered_col58-B_Fab.gbr",
-      "FileFunction": "AssemblyDrawing,Bot",
       "FilePolarity": "Positive"
     }
   ],
