@@ -218,7 +218,14 @@ module.exports = {
       ${p.ref_hide}
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (attr exclude_from_pos_files exclude_from_bom${p.allow_soldermask_bridges ? ' allow_soldermask_bridges' : ''})
+    (property "Value" "Kailh CPG135001S30"
+      (at 0 0 ${p.r})
+      (layer "${p.side}.SilkS")
+      hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    
+    (attr ${p.hotswap ? 'smd' : 'exclude_from_pos_files exclude_from_bom'}${p.allow_soldermask_bridges ? ' allow_soldermask_bridges' : ''})
 
     ${''/* middle shaft hole */}
     ${p.include_plated_holes ? `
@@ -502,7 +509,7 @@ module.exports = {
     }
     if (p.side == "B" || p.reversible) {
       final += `
-    (fp_text value "%R" (at 0 7.5 ${p.r}) (layer B.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
+    (fp_text user "%R" (at 0 7.5 ${p.r}) (layer B.SilkS) (effects (font (size 1 1) (thickness 0.15)) (justify mirror)))
 `
     }
     if (p.include_stabilizer_pad && p.choc_v2_support) {

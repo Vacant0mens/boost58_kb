@@ -16,8 +16,9 @@ module.exports = {
             ${p.at /* parametric position */}
 
             ${'' /* footprint reference */}
-            (fp_text reference "${p.ref}" (at 0 0 ${90 + p.r}) (layer F.SilkS) ${p.ref_hide} (effects (font (size 1.27 1.27) (thickness 0.15))))
-            (fp_text value "" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (property "Reference" "${p.ref}" (at 0 0 ${90 + p.r}) (layer F.SilkS) ${p.ref_hide} (effects (font (size 1.27 1.27) (thickness 0.15))))
+            (property "Value" "WS2812B" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
+        	(attr smd)
             `
         const front_content = `
             (fp_line (start -3.75 -2.5) (end -3.75 2.5) (layer F.SilkS) (width 0.15))
@@ -46,7 +47,7 @@ module.exports = {
         )
         `
         const back_content = `
-            (fp_text value "%R" (at 0 0 ${90 + p.r}) (layer B.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15)) (justify mirror)))
+            (fp_text user "${p.ref}" (at 0 0 ${90 + p.r}) (layer B.SilkS) (effects (font (size 1.27 1.27) (thickness 0.15)) (justify mirror)))
             (fp_line (start -3.75 -2.5) (end -3.75 2.5) (layer B.SilkS) (width 0.15))
             (fp_line (start -3.75 2.5) (end 3.75 2.5) (layer B.SilkS) (width 0.15))
             (fp_line (start 3.75 2.5) (end 3.75 -2.5) (layer B.SilkS) (width 0.15))

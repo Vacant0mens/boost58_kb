@@ -37,7 +37,7 @@ module.exports = {
       ${'' /* footprint description, tags and reference */}
       (descr "Solder-jumper reversible Pro Micro footprint")
       (tags "promicro ProMicro reversible solder jumper")
-      (fp_text reference "${p.ref}" (at -16.256 -0.254 ${p.rot + 90}) (layer F.SilkS) ${p.ref_hide}
+      (property "Reference" "${p.ref}" (at -16.256 -0.254 ${p.rot + 90}) (layer F.SilkS) ${p.ref_hide}
         (effects (font (size 1 1) (thickness 0.15)))
       )
   
