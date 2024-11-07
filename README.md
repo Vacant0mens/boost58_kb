@@ -21,10 +21,14 @@ I designed this with the intention of making it my dream keyboard, but also avai
 
 # Build Progress
 
+## v0.2
+### Top Layout v0.2
+<img src="images/Boost58_v0.2_top_layout.png" width="800px"/>
+
 ## v0.1
 <img src="images/Boost58_v0.1.jpg" width="800px"/>
 
-## Original Top Layout
+### Original Top Layout
 <img src="images/Boost58_top_layout.png" width="800px"/>
 
 # Thanks
