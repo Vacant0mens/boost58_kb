@@ -21,3 +21,7 @@ I designed this with the intention of making it my dream keyboard, but also avai
 
 # Thanks
 Thanks to [ergogen](https://github.com/ergogen/ergogen) for the base software to be able to create this, and [ceoloide](https://github.com/ceoloide/ergogen-footprints) for the footprints and examples.
+
+
+# Buy Me a Coffee
+[@Vacant0mens](https://buymeacoffee.com/vacan0mens)
