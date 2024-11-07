@@ -19,6 +19,14 @@ I designed this board because I couldn't find any options that fit my requiremen
 
 I designed this with the intention of making it my dream keyboard, but also available and accessible to others. I am open to suggestions and PR's.
 
+# Build Progress
+
+## v0.1
+<img src="images/Boost58_v0.1.jpg" width="800px"/>
+
+## Original Top Layout
+<img src="images/Boost58_top_layout.png" width="800px"/>
+
 # Thanks
 Thanks to [ergogen](https://github.com/ergogen/ergogen) for the base software to be able to create this, and [ceoloide](https://github.com/ceoloide/ergogen-footprints) for the footprints and examples.
 
