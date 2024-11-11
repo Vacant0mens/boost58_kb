@@ -170,7 +170,7 @@ points:
             column_net: P15
           rows:
             only:
-              led_row_next: c1
+              led_row_next: r1
               bind: [ 4, 4, 4, 10 ]
     screw_outer_bottom:
       key:
