@@ -35,13 +35,13 @@ points:
   zones:
     matrix:
       anchor:
-        shift: [40, -120]
+        shift: [ 40, -120 ]
       key:
         tags:
         - key
         spread: key_spread
         padding: key_padding
-        bind: [4, 4, 4, 4]
+        bind: [ 4, 4, 4, 4 ]
       rows:
         bottom:
           row_net: P5
@@ -62,7 +62,7 @@ points:
       columns:
         outer:
           key:
-            bind: [4, 4, 7, 4]
+            bind: [ 4, 4, 7, 4 ]
             led_col: 'c0'
             led_col_next: c1
             column_net: P21
@@ -98,22 +98,22 @@ points:
             column_net: P14
           rows:
             bottom:
-              bind: [2, 9, 8, 2]
+              bind: [ 2, 9, 8, 2 ]
               led_row_next: 'r2'
             home:
-              bind: [2, 28, 10, 2]
+              bind: [ 2, 28, 10, 2 ]
               led_row_next: 'r3'
             top:
-              bind: [4, 28, 2, 2]
+              bind: [ 4, 28, 2, 2 ]
               led_row_next: 'r4'
             num:
-              bind: [4, 28, 2, 2]
+              bind: [ 4, 28, 2, 2 ]
               led_row_next: *led_pin
               led_col_next: ''
     thumb:
       anchor:
         ref: matrix_inner_bottom
-        shift: [-57, -17]
+        shift: [ -57, -17 ]
       key:
         tags:
         - key
@@ -132,7 +132,7 @@ points:
             led_col_next: c2
           rows:
             only:
-              bind: [6, 2, 4, 22]
+              bind: [ 6, 2, 4, 22 ]
         second:
           key:
             column_net: P20
@@ -140,92 +140,92 @@ points:
             led_col_next: c3
           rows:
             only:
-              bind: [8, 4, 4, 2]
+              bind: [ 8, 4, 4, 2 ]
         third:
           key:
             led_col: c3
             led_col_next: c4
             splay: -5
-            origin: [-9, -9]
+            origin: [ -9, -9 ]
             column_net: P19
           rows:
             only:
-              bind: [8, 4, 4, 4]
+              bind: [ 8, 4, 4, 4 ]
         home:
           key:
             led_col: c4
             led_col_next: c5
             splay: -15
-            origin: [-9, -9]
+            origin: [ -9, -9 ]
             column_net: P18
           rows:
             only:
-              bind: [4, 4, 4, 4]
+              bind: [ 4, 4, 4, 4 ]
         inner:
           key:
             led_col: c5
             led_col_next: 'c0'
             splay: -20
-            origin: [-9, -9]
+            origin: [ -9, -9 ]
             column_net: P15
           rows:
             only:
-              bind: [4, 4, 4, 10]
               led_row_next: c1
+              bind: [ 4, 4, 4, 10 ]
     screw_outer_bottom:
       key:
         tags:
         - screw
       anchor:
         ref: matrix_outer_bottom
-        shift: [11, -1.5]
+        shift: [ 11, -1.5 ]
     screw_outer_top:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_outer_num
-        shift: [11, -1.5]
+        shift: [ 11, -1.5 ]
     screw_middle_bottom:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: thumb_first_only
-        shift: [12, 13.5]
+        shift: [ 12, 13.5 ]
     screw_middle_top:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_ring_top
-        shift: [12, 13.5]
+        shift: [ 12, 13.5 ]
     screw_inner_bottom:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_inner_bottom
-        shift: [11, -11]
+        shift: [ 11, -11 ]
     screw_inner_top:
       $extends: points.zones.screw_outer_bottom
       anchor:
         ref: matrix_inner_num
-        shift: [11, 6]
+        shift: [ 11, 6 ]
 outlines:
   _keycap_outline:
   - what: rectangle
-    where: [key]
-    size: [keycap_w, keycap_h]
+    where: [ key ]
+    size: [ keycap_w, keycap_h ]
   _panel:
   - what: rectangle
-    where: [key]
+    where: [ key ]
     bound: true
-    size: [key_spread - 4, key_padding - 3]
+    size: [ key_spread - 4, key_padding - 3 ]
   _rst_pwr_trrs_wall_cutout:
   - what: rectangle
     where:
       ref: matrix_inner_home
-      shift: [36, 0.5]
-    size: [4, 31]
+      shift: [ 36, 0.5 ]
+    size: [ 4, 31 ]
   _mcu_usb_wall_cutout:
   - what: rectangle
     where:
       ref: matrix_inner_num
-      shift: [26, 13.4]
-    size: [10, 4]
+      shift: [ 26, 13.4 ]
+    size: [ 10, 4 ]
   _wall_outer:
   - what: outline
     name: _panel
@@ -264,30 +264,30 @@ outlines:
 
   _screws:
   - what: circle
-    where: [screw]
+    where: [ screw ]
     radius: screw_hole_radius
   _screw_material:
   - what: circle
-    where: [screw]
+    where: [ screw ]
     radius: screw_material_radius
   _heat_insert_hole:
   - what: circle
-    where: [screw]
+    where: [ screw ]
     radius: heat_insert_hole_radius
   _switch_cutouts:
   - what: rectangle
-    where: [key]
-    size: [key_cutout_w, key_cutout_h]
+    where: [ key ]
+    size: [ key_cutout_w, key_cutout_h ]
   _switch_spacer_cutouts:
   - what: rectangle
-    where: [key]
-    size: [key_cutout_w + 0.8, key_cutout_h + 0.8]
+    where: [ key ]
+    size: [ key_cutout_w + 0.8, key_cutout_h + 0.8 ]
   _rotary_mcu_cutout:
   - what: rectangle
     where:
       ref: matrix_inner_top
-      shift: [26, -3]
-    size: [19, 69]
+      shift: [ 26, -3 ]
+    size: [ 19, 69 ]
 
   screw_posts:
   - what: outline
@@ -337,7 +337,7 @@ pcbs:
     footprints:
       mount_screws:
         what: mounting_hole_npth
-        where: [screw]
+        where: [ screw ]
         params:
           designator: M3_
           hole_size: screw_hole_radius * 2
@@ -346,12 +346,12 @@ pcbs:
         what: promicro_pretty
         where:
           ref: matrix_inner_num
-          shift: [26, -6]
+          shift: [ 26, -6 ]
           rotate: -90
         params:
       choc_hotswap:
         what: *switch_footprint
-        where: [key]
+        where: [ key ]
         params:
           designator: SW
           # Row-To-Column diode orientation
@@ -372,9 +372,9 @@ pcbs:
           rotate: switch_rotation
       key_diodes:
         what: diode_tht_sod123
-        where: [key]
+        where: [ key ]
         adjust:
-          shift: [diode_pos_x, diode_pos_y]
+          shift: [ diode_pos_x, diode_pos_y ]
           rotate: diode_rotation
         params:
           reversible: true
@@ -385,9 +385,9 @@ pcbs:
           to: "{{column_net}}"
       per_key_leds:
         what: led_sk6812mini-e
-        where: [key]
+        where: [ key ]
         adjust:
-          shift: [led_pos_x, led_pos_y]
+          shift: [ led_pos_x, led_pos_y ]
         params:
           designator: "L"
           P2: "{{led_row_next}}{{led_col_next}}"
@@ -405,7 +405,7 @@ pcbs:
         what: trrs
         where:
           ref: matrix_inner_home
-          shift: [36, 8]
+          shift: [ 36, 8 ]
           rotate: -90
         params:
           A: VCC
@@ -420,13 +420,13 @@ pcbs:
           reversible: true
         where:
           ref: matrix_inner_bottom
-          shift: [33.6, 8]
+          shift: [ 33.6, 8 ]
           rotate: -90
       encoder_top:
         what: rotary
         where:
           ref: matrix_inner_home
-          shift: [24, -8]
+          shift: [ 24, -8 ]
           rotate: -90
         params:
           designator: Rotary
@@ -439,7 +439,7 @@ pcbs:
         what: led_WS2812B
         where:
           ref: thumb_first_only
-          shift: [-9.25, 31.65]
+          shift: [ -9.25, 31.65 ]
           rotate: -90
         params:
           designator: U_
@@ -450,7 +450,7 @@ pcbs:
         what: led_WS2812B
         where:
           ref: thumb_first_only
-          shift: [-9.25, 69.65]
+          shift: [ -9.25, 69.65 ]
           rotate: -90
         params:
           designator: U_
@@ -461,7 +461,7 @@ pcbs:
         what: led_WS2812B
         where:
           ref: thumb_second_only
-          shift: [9.75, 31.5]
+          shift: [ 9.75, 31.5 ]
           rotate: 90
         params:
           designator: U_
@@ -472,7 +472,7 @@ pcbs:
         what: led_WS2812B
         where:
           ref: thumb_second_only
-          shift: [9.75, 69.5]
+          shift: [ 9.75, 69.5 ]
           rotate: 90
         params:
           designator: U_
@@ -483,7 +483,7 @@ pcbs:
         what: led_WS2812B
         where:
           ref: matrix_inner_bottom
-          shift: [11, 7]
+          shift: [ 11, 7 ]
           rotate: -90
         params:
           designator: U_
@@ -494,7 +494,7 @@ pcbs:
         what: led_WS2812B
         where:
           ref: matrix_inner_top
-          shift: [11, 7]
+          shift: [ 11, 7 ]
           rotate: -90
         params:
           designator: U_
