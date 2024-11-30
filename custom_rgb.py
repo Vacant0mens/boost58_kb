@@ -32,7 +32,7 @@ class AnimationModes(AnimationModes):
     RGB_TWINKLE = 9
 
 class CustomRgb(RGB):
-    def __init__(self, pixel_pin, pixel_count: int, *args, **kwargs) -> None:
+    def __init__(self, pixel_pin, num_pixels: int, **kwargs) -> None:
         self.debug = Debug(__name__)
         self.colors = [WHITE, RED, ORANGE, YELLOW, GREEN, CYAN, AZURE, BLUE, MAGENTA, PURPLE, TEAL, PINK]
         make_key(
@@ -40,7 +40,9 @@ class CustomRgb(RGB):
             on_press=self._twinkle_animation,
             on_release=passthrough,
         )
-        super.__init__(pixel_pin=pixel_pin, pixel_count=pixel_count, *args, **kwargs)
+        self.debug("Twinkle key created. Initializing base RGB...")
+        super().__init__(pixel_pin=pixel_pin, num_pixels=num_pixels, animation_speed=1, **kwargs)
+        self.debug("RGB Init done.")
         if not self.enable:
             return
 
