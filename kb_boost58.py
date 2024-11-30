@@ -10,6 +10,7 @@ from kmk.modules.split import Split, SplitSide
 from kmk.modules.layers import Layers
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
+from kmk.extensions.rgb import RGB, AnimationModes
 from kmk.extensions.peg_oled_display import Oled,OledData,OledReactionType,OledDisplayMode
 from kmk.extensions.peg_rgb_matrix import Rgb_matrix,Rgb_matrix_data
 
@@ -68,11 +69,11 @@ class Boost58Keyboard(KMKKeyboard):
         self.brightness_limit = 0.35
         split_args = {
             'split_side': None,
-            'data_pin': board.D0, # UART TX
-            'data_pin2': board.D1,  # UART RX
+            'data_pin': board.D1, # UART RX (always RX for 'data_pin')
+            'data_pin2': board.D0,  # UART TX (always TX for 'data_pin2')
             'split_flip': True,
             'use_pio': True,
-            # 'uart_flip': True
+            'uart_flip': True,
         }
         self.rotary_encoder = EncoderHandler()
         self.modules.append(self.rotary_encoder)
