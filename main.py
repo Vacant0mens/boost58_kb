@@ -96,6 +96,9 @@ if getattr(keyboard, 'rotary_encoder'):
         ],
         [ # 2 - Media, etc
             (KC.LSHIFT(KC.DOWN), KC.LSHIFT(KC.UP),), (KC.LSHIFT(KC.LEFT), KC.LSHIFT(KC.RGHT),)
+        ],
+        [
+            (KC.NOT_SET, KC.NOT_SET,), (KC.NOT_SET, KC.NOT_SET)
         ]
     ]
     keyboard.debug("Encoder rotations set.")
