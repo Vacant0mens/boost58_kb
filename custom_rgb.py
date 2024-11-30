@@ -64,7 +64,8 @@ class CustomRgb(RGB):
 
 
     def _twinkle_animation(self):
-        self._twinkle
+        self._twinkle()
+        # self.debug("Picked new color.")
         self._do_update()
 
     def _twinkle(self):
@@ -86,8 +87,10 @@ class CustomRgb(RGB):
         # pick random LED
         led = random.randint(0, POSSIBLE_LIGHTS)
         # if random LED is not in LED range, move on
+        # otherwise, make LED a random new color
         if led in LED_RANGE:
-            color_number = random.getrandbits(len(len(self.colors).to_bytes(8, 'big')))
-            self.set_rgb(self.colors[color_number], led)
-        # decrease value of all lights by 1
-        self.decrease_val(1)
+            color = random.choice(self.colors)
+            self.debug(f"Color picked for led {led}: {color}")
+            self.leds[led] = color
+            self.set_rgb(color, led)
+            # time.sleep(0.5)
