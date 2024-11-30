@@ -123,30 +123,37 @@ class Boost58Keyboard(KMKKeyboard):
     def _set_rgb_matrix(self):
         self.debug("Adding RGB.")
         lights = []
-        glow = []
-        for c in range(6):
+        for c in range(5):
             lights.append(RED) # top row
         for c in range(6):
             lights.append(ORANGE) # top-middle row
         for c in range(6):
             lights.append(YELLOW) # bottom-middle row
-        for c in range(7):
+        for c in range(6):
             lights.append(GREEN) # bottom row
-        for c in range(4):
+        for c in range(6):
             lights.append(BLUE) # thumb row
-        for c in range(5):
-            glow.append(MAGENTA) # underglow
+        for c in range(6):
+            lights.append(MAGENTA) # underglow
 
         # self.debug("***** Lights array length:", str(len(lights)))
         # self.debug("***** Underglow array length:", str(len(glow)))
-        rgb_ext = Rgb_matrix(
-            ledDisplay=Rgb_matrix_data(
-                keys=lights,                     
-                underglow=glow
-            ),
-            split=False, rightSide=self.is_right
-        )
-        self.extensions.append(rgb_ext)
+        self.rgb = RGB(pixel_pin=self.rgb_pixel_pin, num_pixels=LED_COUNT) #, animation_mode=AnimationModes.BREATHING_RAINBOW)
+
+        # rgb_ext = Rgb_matrix(
+            # ledDisplay=Rgb_matrix_data(
+                # keys=lights,                     
+                # underglow=glow
+            # ),
+            # split=False, rightSide=self.is_right
+        # )
+        # self.extensions.append(rgb_ext)
+        self.debug(f"Appending RGB Extension... {self.rgb}")
+        self.extensions.append(self.rgb)
+
+        # for i in range(len(lights)):
+        #     print(i, " -- ", lights[i])
+        #     self.rgb.set_rgb(lights[i], i)
 
     # def _set_oled(self):
     #     self.debug("Adding OLED extension")
