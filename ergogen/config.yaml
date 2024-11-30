@@ -214,7 +214,11 @@ outlines:
     where: [ key ]
     bound: true
     size: [ key_spread - 4, key_padding - 3 ]
-  _rst_pwr_trrs_wall_cutout:
+  _trrs_wall_cutout:
+  - what: rectangle
+    where: [ trrs ]
+    size: [ 10, 15 ] # test with orientation of trrs jack
+  _reset_wall_cutout:
   - what: rectangle
     where:
       ref: matrix_inner_home
@@ -240,7 +244,8 @@ outlines:
   - what: outline
     name: _wall_outer
   - -_wall_inner
-  - -_rst_pwr_trrs_wall_cutout
+  - -_trrs_wall_cutout
+  - -_reset_wall_cutout
   - -_mcu_usb_wall_cutout
   _panel_filleted:
   - what: outline
@@ -402,6 +407,9 @@ pcbs:
           via_size: 0.56
           via_drill: 0.3
       trrs:
+        key:
+          tags:
+          - trrs
         what: trrs
         where:
           ref: matrix_inner_home
@@ -415,6 +423,9 @@ pcbs:
           reverse: true
           symmetric: false
       reset:
+        key:
+          tags:
+          - reset
         what: reset_switch_smd_side
         params:
           reversible: true
