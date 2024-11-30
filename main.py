@@ -70,9 +70,10 @@ keyboard.keymap = [
     ],
     [
         # 3 - RGB Lighting
-        #Plain RGB     #Breathing     #Rainbow    #Breathe Rainnbow #Knight Rider  #Swirl         #Twinkle
-        KC.RGB_M_P,    KC.RGB_M_B,    KC.RGB_M_R,    KC.RGB_M_BR,   KC.RGB_M_K,    KC.RGB_M_S,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
-        KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
+        #Plain RGB     #Breathing     #Rainbow    #Breathe Rainnbow #Knight Rider  #Swirl
+        KC.RGB_M_P,    KC.RGB_M_B,    KC.RGB_M_R,    KC.RGB_M_BR,   KC.RGB_M_K,    KC.RGB_M_S,    KC.RGB_M_P,    KC.RGB_M_B,    KC.RGB_M_R,    KC.RGB_M_BR,   KC.RGB_M_K,    KC.RGB_M_S,
+        #Twinkle
+        KC.RGB_TWK,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.RGB_TWK,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
         KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
         KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
         KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.TRNS,       KC.NOT_SET,    KC.xxxxxxxxxx, KC.xxxxxxxxxx, KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
