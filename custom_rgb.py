@@ -19,10 +19,13 @@ PURPLE = [242, 0, 255]
 TEAL = [0, 128, 128]
 PINK = [255, 0, 255]
 
-LED_COUNT = 29
-CHANCE_OF_NEW_LIGHT = 0.5
+LED_COUNT = 35
+CHANCE_OF_NEW_LIGHT = 0.05
 SKIP_LEDS = 1
 LED_RANGE = range(0, LED_COUNT, SKIP_LEDS)
+DIM_STEP = 1
+NEW_LIGHT_CHANCE_MULTIPLIER = round(1 / CHANCE_OF_NEW_LIGHT)
+POSSIBLE_LIGHTS = int(LED_COUNT*NEW_LIGHT_CHANCE_MULTIPLIER)
 
 
 class AnimationModes(AnimationModes):
@@ -61,10 +64,8 @@ class CustomRgb(RGB):
         self._do_update()
 
     def _twinkle(self):
-        new_light = round(1 / CHANCE_OF_NEW_LIGHT)
         # pick random LED
-        led = random.getrandbits(len(int(LED_COUNT*new_light).to_bytes(8, 'big')))
-        # turn on new LED (50/50 chance to turn on?)
+        led = random.randint(0, POSSIBLE_LIGHTS)
         # if random LED is not in LED range, move on
         if led in LED_RANGE:
             color_number = random.getrandbits(len(len(self.colors).to_bytes(8, 'big')))
