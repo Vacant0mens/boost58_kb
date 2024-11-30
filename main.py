@@ -2,7 +2,7 @@ from kb_boost58 import Boost58Keyboard
 from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.sticky_mod import StickyMod
-from kmk.modules.oneshot import OneShot
+# from kmk.modules.oneshot import OneShot
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
 
@@ -14,9 +14,14 @@ keyboard = Boost58Keyboard()
 keyboard.debug_enabled = True
 keyboard.debug("Keyboard starting...")
 keyboard.modules.append(Layers())
+keyboard.debug("Layers added.")
 keyboard.modules.append(StickyMod())
-keyboard.modules.append(OneShot())
+keyboard.debug("StickyMod added.")
+# keyboard.modules.append(OneShot())
+# keyboard.debug("OneShot added.")
 keyboard.extensions.append(MediaKeys())
+keyboard.debug("MediaKeys added.")
+
 
 keyboard.debug("Setting custom keys...")
 
