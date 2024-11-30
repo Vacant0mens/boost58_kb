@@ -3,7 +3,11 @@ import os
 from time import sleep
 # from storage import getmount
 from kmk.kmk_keyboard import KMKKeyboard
+from kmk.keys import make_key
+from kmk.handlers.stock import passthrough
 import neopixel
+from supervisor import runtime
+from custom_rgb import CustomRgb as RGB
 from kmk.utils import Debug
 from kmk.scanners import DiodeOrientation
 from kmk.modules.split import Split, SplitSide
@@ -35,6 +39,11 @@ LED_POSITION_RIGHT = [
     34, 31, 30,
     33, 32, 29
 ]
+LED_COUNT = 35
+CHANCE_OF_NEW_LIGHT = 0.5
+SKIP_LEDS = 1
+LED_RANGE = range(0, LED_COUNT, SKIP_LEDS)
+
 
 OFF = [0, 0, 0]
 BLACK = OFF

@@ -5,6 +5,7 @@ from kmk.modules.sticky_mod import StickyMod
 # from kmk.modules.oneshot import OneShot
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
+import custom_rgb
 
 
 # keyboard = HandwireKeyboard()
