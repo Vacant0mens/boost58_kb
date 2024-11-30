@@ -61,7 +61,10 @@ class Boost58Keyboard(KMKKeyboard):
 
         self.diode_orientation = DiodeOrientation.ROW2COL
         self.rgb_pixel_pin = board.D9
-        self.num_pixels = 35
+        # self.neo = neopixel.NeoPixel(self.rgb_pixel_pin, LED_COUNT)
+        self.rgb = RGB(pixel_pin=self.rgb_pixel_pin, num_pixels=LED_COUNT, animation_mode=AnimationModes.BREATHING_RAINBOW)
+        self.extensions.append(self.rgb)
+        self.num_pixels = LED_COUNT
         self.brightness_limit = 0.35
         split_args = {
             'split_side': None,
