@@ -45,6 +45,14 @@ class CustomRgb(RGB):
         self.debug("Twinkle key created. Initializing base RGB...")
         super().__init__(pixel_pin=pixel_pin, num_pixels=num_pixels, animation_speed=1, **kwargs)
         self.debug("RGB Init done.")
+
+    def animate(self):
+        if self.effect_init:
+            self._init_effect()
+
+        if self.animation_mode is AnimationModes.STATIC_STANDBY:
+            return
+
         if not self.enable:
             return
 
@@ -61,6 +69,21 @@ class CustomRgb(RGB):
         elif self.animation_mode == AnimationModes.KNIGHT:
             self.effect_knight()
         elif self.animation_mode == AnimationModes.RAINBOW:
+            self.effect_rainbow()
+        elif self.animation_mode == AnimationModes.STATIC:
+            self.effect_static()
+        elif self.animation_mode == AnimationModes.SWIRL:
+            self.effect_swirl()
+        elif self.animation_mode == AnimationModes.USER:
+            self.user_animation()
+        else:
+            self.off()
+
+        self.show()
+
+    def _rgb_mode_twinkle(self):
+        self.effect_init = True
+        self.animation_mode = AnimationModes.RGB_TWINKLE
 
 
     def _twinkle_animation(self):
