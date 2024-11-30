@@ -2,7 +2,7 @@ import random
 from kmk.utils import Debug
 from kmk.keys import make_key
 from kmk.handlers.stock import passthrough
-from kmk.extensions.rgb import RGB
+from kmk.extensions.rgb import RGB, AnimationModes
 
 OFF = [0, 0, 0]
 BLACK = OFF
@@ -24,6 +24,9 @@ CHANCE_OF_NEW_LIGHT = 0.5
 SKIP_LEDS = 1
 LED_RANGE = range(0, LED_COUNT, SKIP_LEDS)
 
+
+class AnimationModes(AnimationModes):
+    RGB_TWINKLE = 9
 
 class CustomRgb(RGB):
     def __init__(self, pixel_pin, pixel_count: int, *args, **kwargs) -> None:
