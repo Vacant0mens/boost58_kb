@@ -52,7 +52,7 @@ keyboard.keymap = [
         KC.TAB,        KC.Q,          KC.W,          KC.E,          KC.R,          KC.T,          KC.Y,          KC.U,          KC.I,          KC.O,          KC.P,          KC.BSLASH,
         KC.LSFT,       KC.A,          KC.S,          KC.D,          KC.F,          KC.G,          KC.H,          KC.J,          KC.K,          KC.L,          KC.SCLN,       KC.QUOT,
         KC.LCTL,       KC.Z,          KC.X,          KC.C,          KC.V,          KC.B,          KC.N,          KC.M,          KC.COMM,       KC.DOT,        KC.SLSH,       KC.ENT,
-        KC.LALT,       KC.LCTL,       KC.SPC,        KC.MO(2),      KC.MO(1),      KC.xxxxxxxxxx, KC.xxxxxxxxxx, KC.MO(1),      KC.SPC,        KC.LALT,       KC.LGUI,       KC.TG(2),      
+        KC.LALT,       KC.LCTL,       KC.SPC,        KC.MO(2),      KC.MO(1),      KC.xxxxxxxxxx, KC.xxxxxxxxxx, KC.MO(1),      KC.SPC,        KC.MO(3),       KC.LGUI,       KC.TG(2),      
     ],
     [  # 1 - Nav, Symbols
         KC.ESC,        KC.LCTL(KC.U), KC.F9,         KC.F10,        KC.F11,        KC.F12,        KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.LCBR,       KC.RCBR,       KC.DEL,
@@ -68,6 +68,15 @@ keyboard.keymap = [
         KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.N4,         KC.N5,         KC.N6,         KC.UNDS,       KC.EQUAL,
         KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.N1,         KC.N2,         KC.N3,         KC.NOT_SET,    KC.ENT,
         KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.TRNS,       KC.NOT_SET,    KC.xxxxxxxxxx, KC.xxxxxxxxxx, KC.NOT_SET,    KC.SPC,        KC.N0,         KC.DOT,        KC.TG(2),      
+    ],
+    [
+        # 3 - RGB Lighting
+        #Plain RGB     #Breathing     #Rainbow    #Breathe Rainnbow #Knight Rider  #Swirl         #Twinkle
+        KC.RGB_M_P,    KC.RGB_M_B,    KC.RGB_M_R,    KC.RGB_M_BR,   KC.RGB_M_K,    KC.RGB_M_S,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
+        KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
+        KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
+        KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
+        KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.TRNS,       KC.NOT_SET,    KC.xxxxxxxxxx, KC.xxxxxxxxxx, KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,    KC.NOT_SET,
     ]
 ]
 keyboard.debug("Keymap set.")
