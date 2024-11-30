@@ -2,21 +2,15 @@ import board
 import os
 from time import sleep
 # from storage import getmount
-from kmk.kmk_keyboard import KMKKeyboard
-from kmk.keys import make_key
-from kmk.handlers.stock import passthrough
+# from supervisor import runtime
 import neopixel
-from supervisor import runtime
-from custom_rgb import CustomRgb as RGB
+from kmk.kmk_keyboard import KMKKeyboard
+from custom_rgb import CustomRgb as cRGB
 from kmk.utils import Debug
 from kmk.scanners import DiodeOrientation
-from kmk.modules.split import Split, SplitSide
-from kmk.modules.layers import Layers
+from kmk.modules.split import Split
 from kmk.modules.encoder import EncoderHandler
-from kmk.extensions.media_keys import MediaKeys
 from kmk.extensions.rgb import RGB, AnimationModes
-from kmk.extensions.peg_oled_display import Oled,OledData,OledReactionType,OledDisplayMode
-from kmk.extensions.peg_rgb_matrix import Rgb_matrix,Rgb_matrix_data
 
 
 LED_POSITION_LEFT = [
@@ -39,10 +33,7 @@ LED_POSITION_RIGHT = [
     34, 31, 30,
     33, 32, 29
 ]
-LED_COUNT = 35
-CHANCE_OF_NEW_LIGHT = 0.5
-SKIP_LEDS = 1
-LED_RANGE = range(0, LED_COUNT, SKIP_LEDS)
+LED_COUNT = len(LED_POSITION_LEFT)
 
 
 OFF = [0, 0, 0]
@@ -64,18 +55,14 @@ PINK = [255, 0, 255]
 class Boost58Keyboard(KMKKeyboard):
     def __init__(self) -> None:
         super().__init__()
+        self.debug_enabled = True
         self.debug = Debug(__name__)
         self.board_light = neopixel.NeoPixel(board.NEOPIXEL, 1)
         self.board_light.fill(WHITE)
         sleep(0.5)
 
         self.diode_orientation = DiodeOrientation.ROW2COL
-        self.rgb_pixel_pin = board.D9
-        # self.neo = neopixel.NeoPixel(self.rgb_pixel_pin, LED_COUNT)
-        self.rgb = RGB(pixel_pin=self.rgb_pixel_pin, num_pixels=LED_COUNT, animation_mode=AnimationModes.BREATHING_RAINBOW)
-        self.extensions.append(self.rgb)
-        self.num_pixels = LED_COUNT
-        self.brightness_limit = 0.35
+
         split_args = {
             'split_side': None,
             'data_pin': board.D1, # UART RX (always RX for 'data_pin')
@@ -84,94 +71,35 @@ class Boost58Keyboard(KMKKeyboard):
             'use_pio': True,
             'uart_flip': True,
         }
-        self.rotary_encoder = EncoderHandler()
-        self.modules.append(self.rotary_encoder)
         self.row_pins = (board.D2, board.D3, board.D4, board.D5, board.D6)
         self.col_pins = (board.D29, board.D28, board.D27,  board.D26,  board.D22, board.D20)
-        self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
-
-        if '_LEFT' in os.listdir():
-            # LEFT
-            self.is_right = False
-            self.debug("set to Left")
-        elif '_RIGHT' in os.listdir():
-            # RIGHT
-            self.is_right = True
-            self.debug("set to Right")
-        else:
-            while True:
-                self.board_light.fill(RED)
-                print("No side set.")
-                sleep(1)
-                print("Copy _LEFT or _RIGHT file to circuitpython drive.")
-                self.board_light.fill(OFF)
-                sleep(1)
-
-
         self.split = Split(**split_args)
         self.modules.append(self.split)
 
+        self.board_light.fill(RED)
+        self.debug("Split setup done.")
+
+        self.rotary_encoder = EncoderHandler()
+        self.modules.append(self.rotary_encoder)
+        self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
+
         self.board_light.fill(ORANGE)
-        self.debug("Side set.")
+        self.debug("Encoder setup done.")
+
         # sleep(0.5)
-        
-        # self._set_rgb_matrix()
-        # self._set_oled()
+        self.rgb_pixel_pin = board.D9
+        self.rgb = cRGB(pixel_pin=self.rgb_pixel_pin, num_pixels=LED_COUNT, animation_mode=AnimationModes.USER)
+        self.debug("RGB initialized.")
+        self.extensions.append(self.rgb)
+        self.debug("RGB added to extensions.")
 
         self.board_light.fill(BLUE)
-        self.debug("Setup done.")
+        self.debug("RGB setup done.")
         # sleep(0.5)
+
         self.board_light.fill(GREEN)
+        self.debug("Boost58 setup done.")
         # sleep(0.5)
-
-    def _set_rgb_matrix(self):
-        self.debug("Adding RGB.")
-        lights = []
-        for c in range(5):
-            lights.append(RED) # top row
-        for c in range(6):
-            lights.append(ORANGE) # top-middle row
-        for c in range(6):
-            lights.append(YELLOW) # bottom-middle row
-        for c in range(6):
-            lights.append(GREEN) # bottom row
-        for c in range(6):
-            lights.append(BLUE) # thumb row
-        for c in range(6):
-            lights.append(MAGENTA) # underglow
-
-        # self.debug("***** Lights array length:", str(len(lights)))
-        # self.debug("***** Underglow array length:", str(len(glow)))
-        self.rgb = RGB(pixel_pin=self.rgb_pixel_pin, num_pixels=LED_COUNT) #, animation_mode=AnimationModes.BREATHING_RAINBOW)
-
-        # rgb_ext = Rgb_matrix(
-            # ledDisplay=Rgb_matrix_data(
-                # keys=lights,                     
-                # underglow=glow
-            # ),
-            # split=False, rightSide=self.is_right
-        # )
-        # self.extensions.append(rgb_ext)
-        self.debug(f"Appending RGB Extension... {self.rgb}")
-        self.extensions.append(self.rgb)
-
-        # for i in range(len(lights)):
-        #     print(i, " -- ", lights[i])
-        #     self.rgb.set_rgb(lights[i], i)
-
-    # def _set_oled(self):
-    #     self.debug("Adding OLED extension")
-    #     self.SCL = board.D3
-    #     self.SDA = board.D2
-    #     oled_ext = Oled(
-    #         OledData(
-    #             corner_one={0:OledReactionType.STATIC,1:["layer"]},
-    #             corner_two={0:OledReactionType.LAYER,1:["1","2","3","4"]},
-    #             corner_three={0:OledReactionType.LAYER,1:["base","raise","lower","adjust"]},
-    #             corner_four={0:OledReactionType.LAYER,1:["qwerty","nums","shifted","leds"]}
-    #         )
-    #     )
-    #     # self.extensions.append(oled_ext)
 
 if __name__ == '__main__':
     keyboard = Boost58Keyboard()
