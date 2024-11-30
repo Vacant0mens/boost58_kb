@@ -78,22 +78,16 @@ class Boost58Keyboard(KMKKeyboard):
         self.modules.append(self.rotary_encoder)
         self.row_pins = (board.D2, board.D3, board.D4, board.D5, board.D6)
         self.col_pins = (board.D29, board.D28, board.D27,  board.D26,  board.D22, board.D20)
+        self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
 
         if '_LEFT' in os.listdir():
             # LEFT
             self.is_right = False
-            # split_args['split_side'] = SplitSide.LEFT
             self.debug("set to Left")
-            self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
-            self.led_key_pos = LED_POSITION_LEFT
         elif '_RIGHT' in os.listdir():
             # RIGHT
             self.is_right = True
-            # split_args['split_side'] = SplitSide.RIGHT
-            # split_args['uart_flip'] = True
             self.debug("set to Right")
-            self.rotary_encoder.pins = ((board.D7, board.D8, None, False,),)
-            self.led_key_pos = LED_POSITION_RIGHT
         else:
             while True:
                 self.board_light.fill(RED)
@@ -111,7 +105,7 @@ class Boost58Keyboard(KMKKeyboard):
         self.debug("Side set.")
         # sleep(0.5)
         
-        self._set_rgb_matrix()
+        # self._set_rgb_matrix()
         # self._set_oled()
 
         self.board_light.fill(BLUE)
@@ -171,4 +165,5 @@ class Boost58Keyboard(KMKKeyboard):
 
 if __name__ == '__main__':
     keyboard = Boost58Keyboard()
+    keyboard.debug("Done initializing keyboard.")
     keyboard.go()
