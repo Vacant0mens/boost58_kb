@@ -35,6 +35,8 @@ class CustomRgb(RGB):
     def __init__(self, pixel_pin, num_pixels: int, **kwargs) -> None:
         self.debug = Debug(__name__)
         self.colors = [WHITE, RED, ORANGE, YELLOW, GREEN, CYAN, AZURE, BLUE, MAGENTA, PURPLE, TEAL, PINK]
+        self.leds = []
+        [self.leds.append([0,0,0]) for i in range(num_pixels)]
         make_key(
             names=('RGB_TWINKLE', 'RGB_TWK'),
             on_press=self._twinkle_animation,
@@ -66,6 +68,21 @@ class CustomRgb(RGB):
         self._do_update()
 
     def _twinkle(self):
+        # dim all LED's by DIM_STEP
+        for i in range(len(self.leds)):
+            if self.leds[i] == [0, 0, 0]:
+                pass
+            else:
+                new_led = [0, 0, 0]
+                for l in range(len(new_led)):
+                    if self.leds[i][l] > 1:
+                        new_led[l] = self.leds[i][l] - DIM_STEP
+                    else:
+                        new_led[l] = 0
+
+                self.leds[i] = new_led
+                self.set_rgb(self.leds[i], i)
+
         # pick random LED
         led = random.randint(0, POSSIBLE_LIGHTS)
         # if random LED is not in LED range, move on
