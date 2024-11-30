@@ -1,4 +1,5 @@
 import random
+from kmk.utils import Debug
 from kmk.keys import make_key
 from kmk.handlers.stock import passthrough
 from kmk.extensions.rgb import RGB
@@ -26,6 +27,7 @@ LED_RANGE = range(0, LED_COUNT, SKIP_LEDS)
 
 class CustomRgb(RGB):
     def __init__(self, pixel_pin, pixel_count: int, *args, **kwargs) -> None:
+        self.debug = Debug(__name__)
         self.colors = [WHITE, RED, ORANGE, YELLOW, GREEN, CYAN, AZURE, BLUE, MAGENTA, PURPLE, TEAL, PINK]
         make_key(
             names=('RGB_TWINKLE', 'RGB_TWK'),
