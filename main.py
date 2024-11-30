@@ -3,15 +3,14 @@ from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.sticky_mod import StickyMod
 # from kmk.modules.oneshot import OneShot
-from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
 
 
 # keyboard = HandwireKeyboard()
 keyboard = Boost58Keyboard()
 
-# keyboard.debug_enabled = False
-keyboard.debug_enabled = True
+keyboard.debug_enabled = False
+# keyboard.debug_enabled = True
 keyboard.debug("Keyboard starting...")
 keyboard.modules.append(Layers())
 keyboard.debug("Layers added.")

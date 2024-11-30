@@ -6,11 +6,12 @@ from time import sleep
 import neopixel
 from kmk.kmk_keyboard import KMKKeyboard
 from custom_rgb import CustomRgb as cRGB
+from custom_rgb import AnimationModes
+from custom_rgb import RED, ORANGE, GREEN, BLUE, WHITE
 from kmk.utils import Debug
 from kmk.scanners import DiodeOrientation
 from kmk.modules.split import Split
 from kmk.modules.encoder import EncoderHandler
-from kmk.extensions.rgb import RGB, AnimationModes
 
 
 LED_POSITION_LEFT = [
@@ -36,26 +37,11 @@ LED_POSITION_RIGHT = [
 LED_COUNT = len(LED_POSITION_LEFT)
 
 
-OFF = [0, 0, 0]
-BLACK = OFF
-WHITE = [255, 255, 255]
-RED = [255, 0, 0]
-ORANGE = [255, 100, 0]
-YELLOW = [200, 255, 0]
-GREEN = [0, 255, 0]
-CYAN = [0, 255, 255]
-AZURE = [153, 245, 255]
-BLUE = [0, 0, 255]
-MAGENTA = [255, 0, 255]
-PURPLE = [242, 0, 255]
-TEAL = [0, 128, 128]
-PINK = [255, 0, 255]
-
-
 class Boost58Keyboard(KMKKeyboard):
     def __init__(self) -> None:
         super().__init__()
-        self.debug_enabled = True
+        self.debug_enabled = False
+        # self.debug_enabled = True
         self.debug = Debug(__name__)
         self.board_light = neopixel.NeoPixel(board.NEOPIXEL, 1)
         self.board_light.fill(WHITE)
@@ -88,7 +74,7 @@ class Boost58Keyboard(KMKKeyboard):
 
         # sleep(0.5)
         self.rgb_pixel_pin = board.D9
-        self.rgb = cRGB(pixel_pin=self.rgb_pixel_pin, num_pixels=LED_COUNT, animation_mode=AnimationModes.USER)
+        self.rgb = cRGB(pixel_pin=self.rgb_pixel_pin, num_pixels=LED_COUNT, animation_mode=AnimationModes.RGB_TWINKLE)
         self.debug("RGB initialized.")
         self.extensions.append(self.rgb)
         self.debug("RGB added to extensions.")

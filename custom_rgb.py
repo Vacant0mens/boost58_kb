@@ -33,6 +33,22 @@ class CustomRgb(RGB):
             on_release=passthrough,
         )
         super.__init__(pixel_pin=pixel_pin, pixel_count=pixel_count, *args, **kwargs)
+        if not self.enable:
+            return
+
+        self._animation_step()
+
+        if self.animation_mode == AnimationModes.STATIC_STANDBY:
+            return
+        elif self.animation_mode == AnimationModes.RGB_TWINKLE:
+            self._twinkle_animation()
+        elif self.animation_mode == AnimationModes.BREATHING:
+            self.effect_breathing()
+        elif self.animation_mode == AnimationModes.BREATHING_RAINBOW:
+            self.effect_breathing_rainbow()
+        elif self.animation_mode == AnimationModes.KNIGHT:
+            self.effect_knight()
+        elif self.animation_mode == AnimationModes.RAINBOW:
 
 
     def _twinkle_animation(self):
